@@ -1,0 +1,85 @@
+छत्तीसगढ़	NNP	11	k7p
+माओवादियों	NN	11	rh
+खतरे	NN	4	k7
+पड़े	VM	5	nmod__k1inv
+समूहों	NN	6	r6
+सर्वे	NN	8	k7
+प्रतिबंध	NN	8	pof
+लगाए	VM	11	k7t
+इसे	PRP	11	k2
+रद्द	JJ	11	pof
+कर	VM	0	main
+।	SYM	11	rsym
+
+आदिवासी	NN	4	k1
+समुदाय	NNP	3	jjmod
+संबंधित	JJ	4	k1s
+हैं	VM	0	main
+।	SYM	4	rsym
+
+इनकी	PRP	2	r6
+संख्या	NN	4	k2
+19,401	QC	4	k2s
+बताई	VM	0	main
+।	SYM	4	rsym
+
+आंकड़ों	NN	5	k7a
+इनका	PRP	3	r6
+अस्तित्व	NN	5	k1
+खतरे	NN	5	k7
+है	VM	0	main
+।	SYM	5	rsym
+
+आदिवासी	NN	6	k1
+महाराष्ट्र	NNP	3	k2
+सटे	VM	5	nmod__k1inv
+छत्तीसगढ़	NNP	5	r6
+जंगलों	NN	6	k7p
+रहते	VM	0	main
+।	SYM	6	rsym
+
+वन	NNP	4	k1
+किलोमीटर	NN	3	r6
+क्षेत्र	NN	4	k7p
+फैला	VM	0	main
+।	SYM	4	rsym
+
+आदिवासियों	NN	4	k7
+कभी	PRP	4	k7t
+ब्रिटिश	NN	4	k2p
+पहुँच	VM	0	main
+।	SYM	4	rsym
+
+जंगल	NN	5	k1
+अब	PRP	5	k7t
+माओवादियों	NN	4	r6
+गढ़	NN	5	k1s
+बन	VM	0	main
+।	SYM	5	rsym
+
+माओवादियों	NN	2	r6
+यहाँ	PRP	4	k7p
+केंद्र	NN	4	k1
+हैं	VM	0	main
+।	SYM	4	rsym
+
+संस्थान	NNP	2	r6
+निदेशक	NN	3	nmod
+वैष्णव	NNP	4	k1
+कहा	VM	0	main
+कि	CC	4	k2
+महीने	NN	12	k7t
+लोगों	NN	12	k2
+सर्वे	NN	10	k2
+बंद	JJ	10	pof
+करने	VM	12	k7
+मजबूर	JJ	12	pof
+कर	VM	5	ccof
+क्योंकि	CC	12	rh
+माओवादियों	NN	18	rd
+हमें	PRP	18	k2
+बार	NN	18	k7t
+धमकी	NN	18	pof
+दी	VM	13	ccof
+।	SYM	4	rsym
+

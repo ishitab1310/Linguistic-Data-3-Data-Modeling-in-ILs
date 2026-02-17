@@ -1,0 +1,520 @@
+यहाँ	PRP	4	k7p
+बुद्ध	NNP	4	k1
+चिरनिद्रा	NN	4	k7
+हैं	VM	0	main
+-	SYM	4	rsym
+
+स्‍तूप	NNP	0	main
+-	SYM	1	rsym
+
+बुद्ध	NNP	2	r6
+महापरिनिर्वाण	NNP	8	k7t
+महाजनपदों	NN	8	k7p
+उनकी	PRP	5	r6
+अस्‍थियों	NN	6	ccof
+और	CC	8	k4
+भस्‍म	NN	6	ccof
+बाँट	VM	0	main
+।	SYM	8	rsym
+
+स्‍थानों	NN	6	k7p
+भस्‍मों	NN	3	ccof
+और	CC	6	k7p
+अस्‍थियों	NN	3	ccof
+स्‍तूप	NN	6	k2
+बनाए	VM	0	main
+।	SYM	6	rsym
+
+कुशीनगर	NNP	2	jjmod
+मौजूद	JJ	3	nmod
+रामाभार	NNP	4	r6
+स्‍तूप	NN	7	k1
+इन्‍हीं	PRP	7	k5
+एक	QC	7	k1s
+है	VM	0	main
+।	SYM	7	rsym
+
+फुट	NN	2	jjmod
+ऊँचे	JJ	3	nmod
+स्‍तूप	NN	5	k2
+विहार	NNP	5	k2g
+कहा	VM	0	main
+।	SYM	5	rsym
+
+हालाँकि	CC	0	main
+वाशिंदों	NN	7	k7
+यह	PRP	7	k1
+स्‍तूप	NNP	5	r6
+नाम	NN	7	k2s
+आज	NN	7	k7t
+जाना	VM	1	ccof
+।	SYM	1	rsym
+
+मंदिर	NN	0	main
+-	SYM	1	rsym
+
+मंदिर	NN	2	r6
+उत्तर	NNP	3	jjmod
+मौजूद	JJ	4	nmod
+मंदिर	NN	8	k1
+अपने	PRP	6	r6
+वास्‍तु	NN	8	rt
+प्रसिद्ध	JJ	8	k1s
+है	VM	0	main
+।	SYM	8	rsym
+
+मंदिर	NN	5	k7p
+बुद्ध	NNP	3	r6
+अष्‍टधातु	NN	4	r6
+मूर्ति	NN	5	k1
+है	VM	0	main
+।	SYM	5	rsym
+
+मंदिर	NN	7	k1
+सुबह	NN	3	nmod
+10	QC	5	rsp
+शाम	NN	5	nmod
+बजे	NN	7	k7t
+दर्शनार्थियों	NN	7	rt
+खुला	VM	0	main
+।	SYM	7	rsym
+
+मंदिर	NN	0	r6
+द्वार	NN	0	k1
+हैं	VM	0	main
+जो	PRP	0	k1
+दिशाओं	NN	0	rd
+बनाए	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मंदिर	NN	2	r6-k2
+देखरेख	NN	5	pof
+जापान	NNP	4	r6
+संस्‍था	NN	5	rd
+की	VM	0	main
+।	SYM	5	rsym
+
+संग्रहालय	NN	0	main
+-	SYM	1	rsym
+
+मंदिर	NN	3	k7p
+संग्रहालय	NN	3	k1
+है	VM	0	main
+।	SYM	3	rsym
+
+इसमें	PRP	11	k7
+वस्‍तुएं	NN	9	ccof
+धातुएं	NN	9	ccof
+कुशीनगर	NNP	6	k7p
+खुदाई	NN	6	k7t
+पाई	VM	7	nmod__k1inv
+मूर्ति	NN	9	ccof
+सिक्‍के	NN	9	ccof
+,	SYM	11	k2
+बर्तन	NN	9	ccof
+रखे	VM	0	main
+।	SYM	11	rsym
+
+इसके	PRP	9	sent-adv
+मथुरा	NNP	3	ccof
+और	CC	5	nmod
+गांधार	NNP	3	ccof
+शैली	NN	6	r6
+मूर्तियाँ	NN	9	k1
+यहाँ	PRP	9	k7p
+देखने	VM	9	rt
+मिलेंगी	VM	0	main
+।	SYM	9	rsym
+
+मंदिर	NN	6	k7p
+शैली	NN	3	r6
+बुद्ध	NNP	4	r6
+अष्‍टधातु	NN	5	r6
+मूर्ति	NN	6	k1
+है	VM	0	main
+।	SYM	6	rsym
+
+मंदिर	NN	2	r6
+वास्‍तु	NN	5	k1
+थाईलैंड	NNP	4	r6
+मंदिरों	NN	5	k1u
+है	VM	0	main
+।	SYM	5	rsym
+
+इसकी	PRP	2	r6
+संरक्षिका	NN	5	k1
+थाईलैंड	NNP	4	r6
+राजकुमारी	NN	5	k1s
+हैं	VM	0	main
+।	SYM	5	rsym
+
+मंदिर	NN	2	r6
+शीर्ष	NN	5	k7p
+सोने	NN	4	r6
+परत	NN	5	k2
+लगाई	VM	0	main
+।	SYM	5	rsym
+
+मंदिर	NNP	0	main
+-	SYM	1	rsym
+
+वर्तमान	NN	8	k7t
+आकर्षण	NN	3	r6
+केंद्र	NN	8	k1
+यहाँ	PRP	8	k7p
+हाल	NN	6	jjmod
+निर्मित	JJ	7	nmod
+मंदिर	NNP	8	k1s
+है	VM	0	main
+।	SYM	8	rsym
+
+मंदिर	NN	2	r6-k2
+निर्माण	NN	4	pof
+सरकार	NNP	4	k3
+किया	VM	0	main
+।	SYM	4	rsym
+
+पत्‍थरों	NN	2	k3
+बने	VM	3	nmod__k1inv
+मंदिर	NN	4	r6
+तल	NN	5	k1
+हैं	VM	0	main
+।	SYM	5	rsym
+
+तल	NN	6	k1
+भिक्षुओं	NN	3	r6
+ध्‍यान	NN	4	ccof
+और	CC	6	rt
+साधना	NN	4	ccof
+है	VM	7	ccof
+NULL	CC	0	main
+वहीं	RB	12	sent-adv
+तल	NN	12	k1
+पर्यटकों	NN	12	rt
+खुला	JJ	12	k1s
+है	VM	7	ccof
+।	SYM	7	rsym
+
+मंदिर	NN	6	k7p
+शैली	NN	3	r6
+बुद्ध	NNP	4	r6
+अष्‍टधातु	NN	5	r6
+मूर्ति	NN	6	k1
+है	VM	0	main
+।	SYM	6	rsym
+
+मंदिर	NN	2	r6
+वास्‍तु	NN	5	k1
+थाईलैंड	NNP	4	r6
+मंदिरों	NN	5	k1u
+है	VM	0	main
+।	SYM	5	rsym
+
+इसकी	PRP	2	r6
+संरक्षिका	NN	5	k1
+थाईलैंड	NNP	4	r6
+राजकुमारी	NN	5	k1s
+हैं	VM	0	main
+।	SYM	5	rsym
+
+मंदिर	NN	2	r6
+शीर्ष	NN	5	k7p
+सोने	NN	4	r6
+परत	NN	5	k2
+लगाई	VM	0	main
+।	SYM	5	rsym
+
+ही	RP	5	sent-adv
+परिसर	NN	3	r6
+ओर	NST	5	rd
+बागवानी	NN	5	pof
+की	VM	0	main
+।	SYM	5	rsym
+
+पौधों	NN	2	r6
+आकार	NN	5	k1
+पर्यटकों	NN	5	k2
+अपनी	PRP	5	rd
+खींचता	VM	0	main
+।	SYM	5	rsym
+
+परिसर	NN	2	jjmod
+मौजूद	JJ	3	nmod
+चैत्‍य	NN	7	k1
+सभी	PRP	5	r6
+आकर्षण	NN	6	r6
+केंद्र	NN	7	k1s
+बन	VM	0	main
+।	SYM	7	rsym
+
+लोग	NN	9	k1
+बरबस	RB	9	adv
+सोने	NN	4	r6
+परत	NN	5	k2
+चढ़े	VM	6	nmod__k1inv
+चैत्‍य	NN	9	ras-k1
+फोटो	NN	8	k2
+खींचना	VM	9	k2
+चाहते	VM	0	main
+।	SYM	9	rsym
+
+मंदिर	NN	0	main
+-	SYM	1	rsym
+
+कुशीनगर	NNP	2	r6
+विस्‍तार	NN	8	vmod
+यहाँ	PRP	8	k7p
+अधिक	QF	5	k1s
+बनाए	VM	6	nmod__k2inv
+मंदिरों	NN	8	k5
+मंदिर	NN	8	k1
+है	VM	0	main
+।	SYM	8	rsym
+
+मंदिर	NN	7	k7p
+बुद्ध	NNP	3	r6
+मूर्ति	NN	7	k1
+अपने	PRP	5	r6
+स्‍वरूप	NN	7	k7
+चीनी	JJ	7	k1s
+लगती	VM	0	main
+।	SYM	7	rsym
+
+इसकी	PRP	2	r6
+दीवारों	NN	7	k7p
+कथाओं	NN	4	jjmod
+संबंधित	JJ	5	nmod
+पेंटिंग	NN	7	k1
+आकर्षक	JJ	7	k1s
+है	VM	0	main
+।	SYM	7	rsym
+
+मंदिर	NN	3	k7p
+फव्वारा	NN	3	k1
+है	VM	0	main
+।	SYM	3	rsym
+
+ही	RP	4	sent-adv
+लगा	VM	3	nmod__k1inv
+विहार	NN	4	k1
+है	VM	0	main
+।	SYM	4	rsym
+
+मंदिर	NNP	2	ccof
+और	CC	0	main
+पगोडा	NNP	2	ccof
+-	SYM	2	rsym
+
+मंदिर	NN	3	k7t
+तालाब	NN	3	k7p
+बना	VM	4	nmod__k1inv
+बुद्ध	NNP	5	r6
+मंदिर	NN	6	ccof
+और	CC	13	k1
+इसके	PRP	8	k7p
+बना	VM	9	nmod__k1inv
+पगोडा	NNP	6	ccof
+पर्यटकों	NN	11	r6
+आकर्षण	NN	12	r6
+केंद्र	NN	13	k1s
+है	VM	0	main
+।	SYM	13	rsym
+
+मंदिर	NNP	2	k2p
+जाने	VM	6	rt
+तालाब	NN	6	k7p
+पुल	NN	5	r6-k2
+निर्माण	NN	6	pof
+किया	VM	0	main
+।	SYM	6	rsym
+
+इसमें	PRP	8	k7
+कछुओं	NN	3	ccof
+और	CC	8	ras-k2
+बतख	NN	3	ccof
+मछलियों	NN	8	k2
+अठखेलियाँ	NN	7	pof
+करते	VM	8	vmod
+देखना	VM	10	k2
+अच्‍छा	JJ	10	pof
+लगता	VM	0	main
+।	SYM	10	rsym
+
+सामने	NST	2	jjmod
+मौजूद	JJ	3	nmod
+पगोडा	NNP	4	k7p
+बँधी	VM	5	nmod__k1inv
+घंटियाँ	NN	11	k1
+सुरम्‍य	JJ	7	ccof
+और	CC	9	nmod
+शांत	JJ	7	ccof
+वातावरण	NN	11	k7
+जब	PRP	11	k7t
+बजती	VM	12	nmod__relc
+तो	PRP	13	k7t
+लगता	VM	0	main
+कि	CC	13	k2
+ये	PRP	21	k1
+दिशाओं	NN	21	k7
+अहिंसा	NN	18	ccof
+और	CC	20	r6-k2
+प्रेम	NN	18	ccof
+संदेश	NN	21	pof
+दे	VM	14	ccof
+।	SYM	13	rsym
+
+मंदिर	NN	0	main
+-	SYM	1	rsym
+
+जलमंदिर	NNP	6	k7p
+शिव	NNP	3	jjmod
+समर्पित	JJ	4	nmod
+मंदिर	NN	6	k1
+मौजूद	JJ	6	k1s
+है	VM	0	main
+।	SYM	6	rsym
+
+शैली	NNP	2	k7
+बने	VM	3	nmod__k1inv
+मंदिर	NN	8	k7p
+शिव	NNP	5	r6
+मुद्रा	NN	8	k7
+संगमरमर	NN	7	r6
+मूर्ति	NN	8	k1
+है	VM	0	main
+।	SYM	8	rsym
+
+इसके	PRP	2	r6
+बगल	NN	4	k7p
+धर्मशाला	NN	4	k1
+है	VM	0	main
+।	SYM	4	rsym
+
+कैसे	WQ	2	adv
+पहुँचें	VM	0	main
+?	SYM	2	rsym
+
+कुशीनगर	NNP	7	k1
+गोरखपुर	NNP	7	k5
+किलोमीटर	NN	4	r6
+दूरी	NN	7	k7p
+28	NNP	7	k7p
+स्‍थित	JJ	7	k1s
+है	VM	0	main
+।	SYM	7	rsym
+
+यहाँ	PRP	2	k7p
+पहुँचने	VM	5	rt
+स्‍टेशन	NN	5	k1
+जंक्‍शन	NNP	5	k1s
+है	VM	0	main
+।	SYM	5	rsym
+
+गोरखपुर	NNP	7	k5
+घंटे	NN	7	k7t
+कुशीनगर	NNP	7	rt
+कसया	NNP	3	rs
+के	PSP	3	fragof
+बसें	NN	7	k1
+मिलती	VM	0	main
+।	SYM	7	rsym
+
+गोरखपुर	NNP	7	k5
+देश	NN	3	r6
+शहरों	NN	7	rt
+ट्रेन	NN	5	r6
+सुविधा	NN	7	k1
+उपलब्‍ध	JJ	7	k1s
+है	VM	0	main
+।	SYM	7	rsym
+
+इसके	PRP	9	sent-adv
+गोरखपुर	NNP	9	k5
+दिल्‍ली	NNP	5	ccof
+मुंबई	NNP	5	ccof
+और	CC	9	rt
+कोलकाता	NNP	5	ccof
+सुविधा	NN	9	k1
+उपलब्‍ध	JJ	9	k1s
+है	VM	0	main
+।	SYM	9	rsym
+
+दिल्‍ली	NNP	2	ccof
+और	CC	13	k5
+लखनऊ	NNP	2	ccof
+विभाग	NNP	13	rd
+विदेशी	JJ	6	ccof
+और	CC	8	nmod
+घरेलू	JJ	6	ccof
+पर्यटकों	NN	13	rt
+वाहन	NN	10	ccof
+और	CC	12	r6-k2
+रहने	VM	10	ccof
+व्‍यवस्‍था	NN	13	pof
+की	VM	0	main
+।	SYM	13	rsym
+
+कहाँ	WQ	2	k7p
+ठहरें	VM	0	main
+?	SYM	2	rsym
+
+कुशीनगर	NNP	7	k7p
+सैलानियों	NN	3	k1
+ठहरने	VM	7	rt
+श्रेणी	NN	5	r6
+होटल	NN	7	k1
+मौजूद	JJ	7	k1s
+हैं	VM	0	main
+।	SYM	7	rsym
+
+यहाँ	PRP	7	k7p
+लोटस	NNP	5	ccof
+होटल	NN	5	ccof
+रेसीडेंसी	NNP	5	ccof
+और	CC	7	k7p
+निवास	NNP	5	ccof
+ठहरने	VM	9	rt
+बेहतर	JJ	9	pof
+होगा	VM	0	main
+कि	CC	9	k1
+पहले	NST	13	k7t
+बुकिंग	NN	13	pof
+करवा	VM	10	ccof
+।	SYM	9	rsym
+
+इनमें	PRP	2	nmod
+निवास	NNP	5	k1
+निगम	NNP	5	rd
+संचालित	JJ	5	pof
+होता	VM	0	main
+।	SYM	5	rsym
+
+वहीं	RB	5	sent-adv
+धर्मशालाओं	NN	5	k7p
+साल	NN	5	k7t
+भीड़	NN	5	k1
+रहती	VM	0	main
+।	SYM	5	rsym
+
+इसमें	PRP	6	k7
+धर्मशाला	NN	3	ccof
+और	CC	6	k1
+धर्मशाला	NN	3	ccof
+प्रमुख	JJ	6	k1s
+हैं	VM	0	main
+।	SYM	6	rsym
+
+इसके	PRP	5	vmod
+देशों	NN	3	r6
+मंदिरों	NN	4	r6
+धर्मशाला	NN	5	k1
+हैं	VM	0	main
+।	SYM	5	rsym
+
+भिक्षुओं	NN	5	rt
+मंदिरों	NN	5	k7p
+विहार	NN	4	r6
+व्‍यवस्‍था	NN	5	k1
+है	VM	0	main
+।	SYM	5	rsym
+

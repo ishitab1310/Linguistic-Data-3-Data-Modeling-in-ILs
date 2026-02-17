@@ -1,0 +1,65 @@
+ब्यूरो	NNP	2	r6
+पद	NN	3	r6
+दौड़	NN	4	jjmod
+शामिल	JJ	5	nmod
+अधिकारी	NN	6	nmod
+पाधी	NNP	9	k2
+सुरक्षा	NN	9	k2s
+नियुक्त	JJ	9	pof
+किया	VM	0	main
+।	SYM	9	rsym
+
+कैडर	NN	10	k5
+बैच	NN	3	r6
+अधिकारी	NN	4	nmod
+पाधी	NNP	10	k1
+ब्यूरो	NNP	7	nmod
+आईबी	NNP	5	rs
+पद	NN	8	r6
+दावेदारों	NN	10	k5
+एक	QC	10	k1s
+थे	VM	0	main
+।	SYM	10	rsym
+
+नियुक्तियों	NN	2	k2
+लेकर	VM	12	vmod
+समिति	NN	12	k1
+मई	NNP	12	k7t
+कुमार	NNP	7	k1
+रिटायर	NN	7	pof
+होने	VM	12	k7t
+पद	NN	12	k7
+पाधी	NNP	10	r6
+नियुक्ति	NN	12	k4
+मंजूरी	NN	12	pof
+दी	VAUX	0	main
+।	SYM	12	rsym
+
+पाधी	NNP	2	r6
+कार्यकाल	NN	5	k1
+वर्ष	NN	5	k7t
+जुलाई	NNP	5	k7t
+होगा	VM	0	main
+।	SYM	5	rsym
+
+सरकार	NN	2	r6
+फैसले	NN	10	rh
+बिहार	NNP	10	k5
+बैच	NN	5	r6
+अधिकारी	NN	6	nmod
+हलधर	NNP	10	k1
+ब्यूरो	NNP	8	r6
+निदेशक	NN	9	r6-k2
+दावेदार	NN	10	pof
+हो	VM	0	main
+।	SYM	10	rsym
+
+ब्यूरो	NN	2	r6
+निदेशक	NN	3	nmod
+नरसिम्हन	NNP	7	k1
+वर्ष	NN	7	k7t
+नवंबर	NNP	7	k7t
+रिटायर	NN	7	pof
+होंगे	VM	0	main
+।	SYM	7	rsym
+

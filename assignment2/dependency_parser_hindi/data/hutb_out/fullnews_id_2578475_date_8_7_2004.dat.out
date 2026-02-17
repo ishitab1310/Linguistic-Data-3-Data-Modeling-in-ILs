@@ -1,0 +1,46 @@
+यादव	NNP	2	r6
+नेतृत्व	NN	7	k7
+प्रतिनिधिमंडल	NN	7	k1
+मंगलवार	NNP	7	k7t
+सिंह	NNP	7	k2
+मुलाक़ात	NN	7	pof
+की	VM	0	main
+।	SYM	7	rsym
+
+प्रतिनिधिमंडल	NN	12	k1
+बिहार	NNP	7	k7p
+बिजली	NN	4	r6
+स्थिति	NN	7	k3
+प्रधानमंत्री	NNP	7	k4
+अवगत	JJ	7	k2
+कराते	VM	12	vmod
+राज्य	NN	12	k7p
+रिएक्टर	NNP	10	r6
+स्थापना	NN	11	r6
+माँग	NN	12	k2
+रखी	VM	0	main
+।	SYM	12	rsym
+
+प्रधानमंत्री	NNP	6	k1
+संबंध	NN	6	k7
+आयोग	NNP	4	k2
+लिखने	VM	5	r6-k2
+भरोसा	NN	6	pof
+दिया	VM	0	main
+।	SYM	6	rsym
+
+प्रतिनिधिमंडल	NN	13	k7
+गुप्ता	NNP	5	ccof
+सिंह	NNP	5	ccof
+फातमी	NNP	5	ccof
+और	CC	13	k1
+सांसद	NN	7	nmod
+किशन	NNP	10	ccof
+झा	NNP	10	ccof
+राय	NNP	10	ccof
+व	CC	5	ccof
+पासवान	NNP	10	ccof
+शामिल	JJ	13	k1s
+थे	VM	0	main
+।	SYM	13	rsym
+

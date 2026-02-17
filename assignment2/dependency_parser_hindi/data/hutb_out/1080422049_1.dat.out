@@ -1,0 +1,268 @@
+युगांतर	NN	7	k7t
+उत्तराखंड	NNP	7	k1
+भारतीयों	NN	7	rt
+शरणस्थल	NN	5	ccof
+और	CC	7	k1s
+प्रदाता	NN	5	ccof
+रहा	VM	0	main
+।	SYM	7	rsym
+
+काल	NN	8	k5
+मुनियों	NN	3	ccof
+और	CC	8	k2
+साधक	NN	3	ccof
+परिव्राजकों	NN	3	ccof
+यह	PRP	8	k1
+आकर्षित	JJ	8	pof
+करता	VM	0	main
+।	SYM	8	rsym
+
+हिमालय	NNP	4	k1
+प्रकृति	NN	3	r6
+महामंदिर	NN	4	k1s
+है	VM	0	main
+।	SYM	4	rsym
+
+यहाँ	PRP	5	k7p
+तीर्थ	NN	5	k1
+उत्तराखंड	NNP	4	r6
+स्थल	NN	5	k1s
+है	VM	0	main
+।	SYM	5	rsym
+
+यहाँ	PRP	0	k7p
+जाते	VM	0	k7t
+पैरों	NN	0	k7p
+तत्र	PRP	0	k7p
+राशि	NN	7	k1
+खिसकती	VM	7	k1s
+दिखाई	VM	0	main
+।	SYM	7	rsym
+
+बर्फ	NN	4	k7p
+सुगंध	NN	3	nmod
+पुष्पकुंज	NN	4	k1
+मिलने	VM	0	main
+।	SYM	4	rsym
+
+इनके	PRP	3	k1
+समाप्त	JJ	3	pof
+होने	VM	6	k7t
+बुग्याल	NN	5	nmod
+दूब	NN	6	k1
+मिलती	VM	0	main
+।	SYM	6	rsym
+
+इसके	PRP	20	k7t
+केदारनाथ	NNP	3	r6
+हिमनद	NN	4	ccof
+और	CC	19	k1
+उससे	PRP	6	k5
+निकलने	VM	7	nmod
+मंदाकिनी	NNP	4	ccof
+अपने	PRP	16	k7
+खंडों	NN	10	k2
+फोड़कर	VM	11	vmod
+निकले	VM	12	nmod__k1inv
+झरनों	NN	13	ccof
+और	CC	15	r6
+फव्वारों	NN	13	ccof
+जल	NN	16	k2
+समेटे	VM	19	vmod
+गति	NN	19	adv
+प्रवाहित	JJ	19	pof
+होती	VM	20	k1
+दिखाई	VM	0	main
+।	SYM	20	rsym
+
+सबके	PRP	0	k7p
+केदारनाथ	NNP	0	r6
+मीटर	NN	0	jjmod
+ऊँचा	JJ	0	nmod
+हिमशिखर	NN	0	k1
+ऐसा	PRP	0	adv
+दिखाई	VM	0	main
+मानो	RB	0	adv
+स्वर्ग	NN	0	k7p
+रहने	VM	0	nmod
+देवताओं	NN	0	r6
+मृत्युलोक	NN	0	k2
+झाँकने	VM	0	r6
+यह	PRP	0	k1
+झरोखा	NN	0	k1s
+हो	VM	0	rbmod__relc
+।	SYM	0	rsym
+
+ऋषिकेश	NNP	0	nmod
+केदारनाथ	NNP	0	r6
+दूरी	NN	0	k1
+किमी	NN	0	k1s
+है	VM	0	main
+जिसमें	PRP	0	k7
+किमी	NN	0	r6
+अंश	NN	0	k1
+जो	PRP	0	k1
+गौरीकुंड	NNP	0	k5
+केदारनाथ	NNP	0	k1s
+है	VM	0	nmod__relc
+वह	PRP	0	k1s
+पैदल	NN	0	ccof
+घोड़े	NN	0	ccof
+या	CC	0	k3
+पालकी	NN	0	ccof
+जाना	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मार्ग	NN	9	k1
+रानीखेत	NNP	6	ccof
+कर्णप्रयाग	NNP	6	ccof
+चमोली	NNP	6	ccof
+ऊखीमठ	NNP	6	ccof
+NULL	CC	8	nmod
+काशी	NNP	6	ccof
+केदारनाथ	NNP	1	r6
+है	VM	0	main
+।	SYM	9	rsym
+
+यह	PRP	0	k1
+उत्तराखंड	NNP	0	r6
+मंदिर	NN	0	k1s
+है	VM	0	main
+जो	PRP	0	k2
+पत्थरों	NN	0	r6
+शिलाखंडों	NN	0	k2
+जोड़कर	VM	0	vmod
+बनाया	VM	0	nmod__relc
+।	SYM	0	rsym
+
+शिलाखंड	NN	3	k1
+रंग	NN	1	r6
+हैं	VM	0	main
+।	SYM	3	rsym
+
+मंदिर	NN	5	k1
+फुट	NN	3	jjmod
+ऊँचे	JJ	4	nmod
+चबूतरे	NN	5	k7p
+बना	VM	0	main
+।	SYM	5	rsym
+
+इसका	PRP	0	r6
+गर्भगृह	NN	0	k1
+अपेक्षाकृत	RB	0	jjmod
+प्राचीन	JJ	0	k1s
+है	VM	0	main
+जिसे	PRP	0	k2
+शताब्दी	NNP	0	r6
+NULL	NN	0	k2s
+माना	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मंदिर	NN	0	r6
+गर्भगृह	NN	0	k7p
+अर्धा	NN	0	k7p
+कोनों	NN	0	k7p
+स्तंभ	NN	0	k1
+हैं	VM	0	main
+जहाँ	PRP	0	k7p
+होकर	VM	0	vmod
+प्रदक्षिणा	NN	0	k1
+होती	VM	0	nmod__relc
+।	SYM	0	rsym
+
+अर्धा	NN	7	k1
+जो	PRP	4	k1
+चौकोर	NN	4	k1s
+है	VM	1	nmod__relc
+अंदर	NST	6	jjmod
+पोली	JJ	7	k1s
+है	VM	8	ccof
+और	CC	0	main
+अपेक्षाकृत	RB	10	jjmod
+नवीन	JJ	11	k1s
+बनी	VM	8	ccof
+।	SYM	8	rsym
+
+मंडप	NN	5	k1
+विशाल	JJ	3	ccof
+एवं	CC	5	k1s
+भव्य	JJ	3	ccof
+है	VM	0	main
+।	SYM	5	rsym
+
+उसकी	PRP	2	r6
+छत	NN	4	k1
+स्तंभों	NN	4	k7p
+टिकी	VM	0	main
+।	SYM	4	rsym
+
+गवाक्षों	NN	0	k7p
+मूर्तियाँ	NN	0	k1
+हैं	VM	0	main
+जो	PRP	0	k1
+कलात्मक	JJ	0	k1s
+हैं	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मंदिर	NN	6	k7p
+पत्थरों	NN	3	r6
+ढेर	NN	6	k7p
+ईशान	NNP	5	r6
+मंदिर	NN	6	k1
+है	VM	0	main
+।	SYM	6	rsym
+
+ढेर	NN	4	k7p
+शंकराचार्य	NNP	3	r6
+स्थल	NN	4	k1
+है	VM	0	main
+।	SYM	4	rsym
+
+यहाँ	PRP	4	k7p
+शैली	NN	3	r6
+स्मारक	NN	4	k1
+बना	VM	0	main
+।	SYM	4	rsym
+
+वर्तमान	NN	5	k7t
+इसमें	PRP	5	k7p
+मातृकाएँ	NN	5	k1
+स्थापित	JJ	5	k1s
+हैं	VM	0	main
+।	SYM	5	rsym
+
+निःसंदेह	RB	5	adv
+वे	PRP	5	k1
+पहले	NST	5	k7t
+नौ	QC	5	k1s
+रही	VM	0	main
+।	SYM	5	rsym
+
+केदारनाथ	NNP	4	k7p
+मूर्तियों	NN	3	r6
+विग्रह	NN	4	k1
+बिखरे	VM	0	main
+।	SYM	4	rsym
+
+यहाँ	PRP	2	rsp
+दूरी	NN	11	k7p
+सरोवर	NNP	11	k1
+अपने	PRP	8	r6
+गहरे	JJ	6	ccof
+और	CC	8	nmod
+नीले	JJ	6	ccof
+जल	NN	11	rh
+पर्यटकों	NN	11	rt
+स्थल	NN	11	k1s
+है	VM	0	main
+।	SYM	11	rsym
+
+यहाँ	PRP	4	k7p
+गाँधी	NNP	3	r6-k2
+विसर्जन	NN	4	pof
+किए	VM	7	rh
+इसे	PRP	7	k2
+स्मारक	NNP	7	k2s
+कहते	VM	0	main
+।	SYM	7	rsym
+

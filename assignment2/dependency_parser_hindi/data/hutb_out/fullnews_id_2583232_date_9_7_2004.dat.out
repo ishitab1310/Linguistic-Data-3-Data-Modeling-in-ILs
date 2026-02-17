@@ -1,0 +1,73 @@
+एक्सचेंज	NNP	3	jjmod
+कल	NN	3	jjmod
+दर्ज	JJ	4	nmod
+तेजी	NN	5	r6
+असर	NN	11	rh
+आज	NN	11	k7t
+बाजार	NN	11	k7p
+धातुओं	NN	11	k7
+उछाल	NN	10	r6
+रुख	NN	11	k2
+रहा	VM	0	main
+।	SYM	11	rsym
+
+न्यूयॉर्क	NNP	8	k7p
+कल	NN	8	k7t
+सोना	NN	8	k1
+डॉलर	NN	5	k2
+बढ़कर	VM	8	vmod
+औंस	NN	8	k7
+बंद	JJ	8	pof
+हुआ	VM	0	main
+।	SYM	8	rsym
+
+इसके	PRP	2	r6
+असर	NN	11	rh
+आज	NN	11	k7t
+दिल्ली	NNP	11	k7p
+स्टैंडर्ड	NN	11	k1
+तेजी	NN	7	r6
+रिकॉर्ड	NN	8	k2
+बनाते	VM	11	vmod
+ग्राम	NN	11	k7
+बंद	JJ	11	pof
+हुआ	VM	0	main
+।	SYM	11	rsym
+
+इसके	PRP	6	k7t
+जनवरी	NNP	6	k7
+सोने	NN	4	r6
+दाम	NN	6	k1
+ग्राम	NN	6	k7
+पहुंचे	VM	0	main
+।	SYM	6	rsym
+
+तरफ	NST	9	sent-adv
+मुंबई	NNP	9	k7p
+स्टैंडर्ड	NN	9	k1
+रुपये	NN	6	k2
+मजबूत	JJ	6	pof
+होकर	VM	9	vmod
+ग्राम	NN	9	k7
+बंद	JJ	9	pof
+हुआ	VM	0	main
+।	SYM	9	rsym
+
+दिल्ली	NNP	7	k7p
+टंच	NN	3	r6
+दाम	NN	7	k1
+रुपये	NN	5	k2
+उछलकर	VM	7	vmod
+किलो	NN	7	k7
+पहुंच	VM	0	main
+।	SYM	7	rsym
+
+समर्थन	NN	7	k7
+सिक्का	NN	3	ccof
+व	CC	7	k7
+गिन्नी	NN	3	ccof
+तेजी	NN	7	k2
+दर्ज	JJ	7	pof
+की	VM	0	main
+।	SYM	7	rsym
+

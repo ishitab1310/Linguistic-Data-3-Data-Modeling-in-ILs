@@ -1,0 +1,289 @@
+नारायणन	NNP	8	k2
+देश	NN	3	r6
+राष्ट्रपति	NNP	8	k7
+अपनी	PRP	5	r6
+भूमिका	NN	8	rt
+हमेशा	RB	8	adv
+याद	NN	8	pof
+किया	VM	0	main
+।	SYM	8	rsym
+
+उन्होंने	PRP	6	k1
+समय	RDP	6	k7
+सत्ता	NN	6	k4
+उसके	PRP	5	r6
+फैसलों	NN	6	k7
+चेताया	VM	7	ccof
+और	CC	0	main
+बेबाकी	NN	11	adv
+अपनी	PRP	10	r6
+राय	NN	11	k2
+रखी	VM	7	ccof
+।	SYM	7	rsym
+
+१९९७	NNP	2	ccof
+और	CC	15	k7t
+२००१	NNP	2	ccof
+राष्ट्रपति	NNP	15	k7
+अपने	PRP	6	r6
+कार्यकाल	NN	15	k7t
+उन्होंने	PRP	15	k1
+दूरदर्शिता	NN	15	ras-k1
+देश	NN	13	r6
+उदार	JJ	11	ccof
+और	CC	13	nmod
+धर्मनिरपेक्ष	JJ	11	ccof
+परंपराओं	NN	14	r6-k2
+निर्वाह	NN	15	pof
+किया	VM	0	main
+।	SYM	15	rsym
+
+वह	PRP	4	k1
+जब	PRP	4	k7t
+जरूरी	JJ	4	pof
+समझते	VM	5	nmod__relc
+NULL	PRP	9	k7t
+सरकार	NN	9	k7
+अपनी	PRP	8	r6
+राय	NN	9	k2
+रख	VM	0	main
+।	SYM	9	rsym
+
+मामलों	NN	7	k7
+उनकी	PRP	3	r6
+राय	NN	7	k1
+सत्ता	NN	5	r6
+राय	NN	7	k1u
+अलग	JJ	7	pof
+होती	VM	0	main
+।	SYM	7	rsym
+
+१९९७	NNP	11	k7t
+नेतृत्व	NN	3	nmod
+सरकार	NN	11	k7t
+उन्होंने	PRP	11	k1
+बिहार	NNP	8	k7p
+शासन	NNP	8	k2
+लागू	JJ	8	pof
+करने	VM	9	r6
+कैबिनेट	NN	10	r6
+सिफारिश	NN	11	k2
+लौटा	VM	0	main
+।	SYM	11	rsym
+
+२००२	NNP	9	k7t
+गुजरात	NNP	3	r6
+दंगों	NN	9	k7t
+नारायणन	NNP	9	k1
+व्यवस्था	NN	6	k2
+लेकर	VM	9	vmod
+वाजपेयी	NNP	9	k7
+विचार	NN	9	k2
+रखे	VM	0	main
+।	SYM	9	rsym
+
+वे	PRP	6	k1
+देश	NN	3	r6
+पद	NN	4	k7
+पहुंचने	VM	5	nmod
+दलित	NN	6	k1s
+थे	VM	0	main
+।	SYM	6	rsym
+
+नारायणन	NNP	2	r6
+जीवन	NN	4	k1
+संघर्षो	NN	4	k2
+भरा	VM	0	main
+।	SYM	4	rsym
+
+व्यवस्था	NN	9	rh
+उन्हें	PRP	9	k1
+तमाम	QF	4	jjmod
+सामाजिक	JJ	5	ccof
+और	CC	7	nmod
+आर्थिक	JJ	5	ccof
+दिक्कतों	NN	8	r6-k2
+सामना	NN	9	pof
+करना	VM	0	main
+।	SYM	9	rsym
+
+केरल	NNP	2	r6
+उझवुर	NNP	5	k7p
+१९२०	NNP	5	k7t
+परिवार	NN	5	k7
+जन्मे	VM	6	nmod__k1inv
+नारायणन	NNP	9	k1
+बहनों	NN	9	k7
+नंबर	NN	9	k1s
+थे	VM	0	main
+।	SYM	9	rsym
+
+तंगी	NN	6	vmod
+पिता	NN	3	nmod
+वैद्यन	NNP	6	k1
+उन्हें	PRP	6	k4
+शिक्षा	NN	6	k2
+दिलाई	VM	0	main
+।	SYM	6	rsym
+
+नारायणन	NNP	6	k1
+किलोमीटर	NN	3	nmod
+पैदल	NN	4	k2
+चलकर	VM	6	vmod
+स्कूल	NN	6	k2p
+जाते	VM	0	main
+।	SYM	6	rsym
+
+बाद	NST	6	k7t
+उन्होंने	PRP	6	k1
+कोट्टायम	NNP	4	r6
+कॉलेज	NN	6	k7p
+दाखिला	NN	6	pof
+लिया	VM	0	main
+।	SYM	6	rsym
+
+इंटरमीडिएट	NNP	4	k7
+उन्हें	PRP	4	k4
+छात्रवृत्ति	NN	4	k1
+मिली	VM	0	main
+।	SYM	4	rsym
+
+त्रिवेंद्रम	NNP	2	r6
+कॉलेज	NNP	7	k7p
+बीए	NNP	6	r6
+साहित्य	NNP	3	rs
+की	PSP	3	fragof
+परीक्षा	NN	7	k2
+दी	VM	8	ccof
+और	CC	0	main
+यूनीवर्सिटी	NN	12	k7p
+स्थान	NN	12	k2
+प्राप्त	JJ	12	pof
+किया	VM	8	ccof
+।	SYM	8	rsym
+
+उन्होंने	PRP	7	k1
+यूनीवर्सिटी	NN	7	k7p
+प्रवक्ता	NN	4	r6
+नौकरी	NN	5	k2
+पाने	VM	6	r6-k2
+कोशिश	NN	7	pof
+की	VM	0	main
+।	SYM	7	rsym
+
+यूनीवर्सिटी	NN	12	k1
+दलित	NN	5	k4
+लेक्चरर	NN	4	r6
+नौकरी	NN	5	k2
+देने	VM	7	rt
+इनकार	NN	7	pof
+कर	VM	12	vmod
+क्लर्क	NN	9	r6-k2
+नौकरी	NN	10	pof
+करने	VM	11	r6-k2
+प्रस्ताव	NN	12	pof
+रखा	VM	0	main
+।	SYM	12	rsym
+
+तंगी	NN	2	k2
+जूझ	VM	3	nmod__k1inv
+नारायणन	NNP	6	k1
+सिर्फ	RP	6	vmod
+प्रस्ताव	NN	6	k2
+ठुकरा	VM	7	ccof
+बल्कि	CC	0	main
+यूनीवर्सिटी	NN	10	k5
+डिग्री	NN	10	k2
+लेने	VM	12	k2
+इन्कार	NN	12	pof
+कर	VM	7	ccof
+।	SYM	7	rsym
+
+चक्र	NN	2	k2
+घूमा	VM	3	ccof
+और	CC	0	main
+साल	NN	8	k7t
+नारायणन	NNP	8	k1
+देश	NN	7	r6
+उपराष्ट्रपति	NNP	8	k2
+बन	VM	3	ccof
+।	SYM	3	rsym
+
+तब	PRP	8	k7t
+यूनीवर्सिटी	NN	8	k1
+उनसे	PRP	8	k4
+डिग्री	NN	6	k2
+स्वीकार	NN	6	pof
+करने	VM	7	r6-k2
+अनुरोध	NN	8	pof
+किया	VM	0	main
+।	SYM	8	rsym
+
+नारायणन	NNP	3	k1
+दिल्ली	NNP	3	k7p
+चले	VM	4	ccof
+और	CC	0	main
+विभाग	NNP	8	k7p
+असिस्टेंट	NN	7	r6-k2
+नौकरी	NN	8	pof
+की	VM	4	ccof
+।	SYM	4	rsym
+
+फिर	RB	4	adv
+पत्रकारिता	NN	4	k2
+शुरू	NN	4	pof
+कर	VM	0	main
+।	SYM	4	rsym
+
+दौरान	NST	5	k7t
+उन्होंने	PRP	5	k1
+गांधी	NNP	4	r6
+इंटरव्यू	NN	5	k2
+लिया	VM	0	main
+।	SYM	5	rsym
+
+टाटा	NNP	2	r6
+मदद	NN	6	k3
+उन्होंने	PRP	6	k1
+इकोनॅमिक्स	NNP	6	k7p
+दाखिला	NN	6	pof
+लिया	VM	7	ccof
+और	CC	0	main
+१९४९	NNP	9	k7t
+लौटकर	VM	13	vmod
+वे	PRP	13	k1
+सेवा	NN	13	k7
+शामिल	JJ	13	pof
+हो	VM	7	ccof
+।	SYM	7	rsym
+
+दौरान	NST	6	k7t
+नारायणन	NNP	6	k1
+देशों	NN	6	k7p
+भारत	NNP	5	r6
+प्रतिनिधि	NN	6	k2
+रहे	VM	0	main
+।	SYM	6	rsym
+
+१९८४	NNP	3	k7t
+सेवा	NN	3	k5
+लौटने	VM	9	k7t
+वे	PRP	9	k1
+केरल	NNP	6	r6
+ओट्टापलम	NNP	9	k5
+संसद	NN	9	rt
+निर्वाचित	JJ	9	pof
+हुए	VM	0	main
+।	SYM	9	rsym
+
+सरकार	NNP	4	k7
+वे	PRP	4	k1
+मंत्री	NNP	4	k2
+रहे	VM	0	main
+।	SYM	4	rsym
+
+बाद	NST	3	k7t
+उपराष्ट्रपति	NNP	3	k2
+बने	VM	0	main
+।	SYM	3	rsym
+

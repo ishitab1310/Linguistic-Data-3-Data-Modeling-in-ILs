@@ -1,0 +1,132 @@
+दिसंबर	NNP	4	k7t
+हादसे	NN	3	jjmod
+तबाह	JJ	4	pof
+NULL	VM	5	nmod__relc
+समूह	NN	6	rsp
+सुमात्रा	NNP	9	k7p
+भूकंप	NN	8	r6
+झटकों	NN	9	k1
+आना	VM	11	k1
+जारी	JJ	11	k1s
+है	VM	0	main
+।	SYM	11	rsym
+
+आज	NN	5	k7t
+झटके	NN	5	k2
+इलाके	NN	5	k7p
+महसूस	JJ	5	pof
+किए	VM	0	main
+।	SYM	5	rsym
+
+इनसे	PRP	5	rh
+माल	NN	3	r6
+नुकसान	NN	4	r6
+खबर	NN	5	k1
+है	VM	0	main
+।	SYM	5	rsym
+
+उधर	NST	8	sent-adv
+बांग्लादेश	NNP	3	r6
+चटगाँव	NNP	8	k7p
+आज	NN	8	k7t
+भूकंप	NN	6	r6
+झटका	NN	8	k2
+महसूस	JJ	8	pof
+किया	VM	0	main
+।	SYM	8	rsym
+
+पैमाने	NNP	6	k7
+इसकी	PRP	3	r6
+तीव्रता	NN	6	k2
+३.१	QC	6	k2s
+रिकार्ड	NN	6	pof
+की	VM	0	main
+।	SYM	6	rsym
+
+यहाँ	PRP	6	k7p
+सेकेंड	NN	6	k7t
+भूकंप	NN	4	r6
+झटके	NN	6	k2
+महसूस	JJ	6	pof
+किए	VM	0	main
+।	SYM	6	rsym
+
+इसका	PRP	2	r6
+केंद्र	NN	6	k1
+सिटी	NN	4	r6
+किलोमीटर	NN	6	k7p
+स्थित	JJ	6	k1s
+था	VM	0	main
+।	SYM	6	rsym
+
+विभाग	NN	0	k7a
+निकोबार	NNP	0	k7p
+रात	NN	0	k7t
+बजे	NN	0	k7t
+पैमाने	NNP	0	nmod
+५.२	QCC	7	r6
+तीव्रता	NN	11	vmod
+भूकंप	NN	9	r6
+झटका	NN	11	k2
+महसूस	JJ	11	pof
+किया	VM	0	main
+।	SYM	11	rsym
+
+इसका	PRP	2	r6
+केंद्र	NN	5	k1
+द्वीप	NNP	4	r6
+तट	NN	5	rd
+था	VM	0	main
+।	SYM	5	rsym
+
+इसके	PRP	0	k7t
+सुबह	NN	0	k7t
+बजे	NN	0	k7t
+पैमाने	NN	0	k7
+५	QC	0	r6
+तीव्रता	NN	0	vmod
+झटका	NN	0	k2
+लगा	VM	0	main
+जिसका	PRP	0	r6
+केंद्र	NN	0	k1
+अंडमान	NNP	0	k1s
+था	VM	0	nmod__relc
+।	SYM	0	rsym
+
+दिन	NN	0	k7t
+बजे	NN	0	k7t
+५.२	QC	0	r6
+तीव्रता	NN	0	vmod
+झटका	NN	0	k2
+महसूस	JJ	0	pof
+किया	VM	0	main
+जिसका	PRP	0	r6
+केंद्र	NN	0	k1
+अंडमान	NNP	0	r6
+तट	NN	0	k1s
+था	VM	0	nmod__relc
+।	SYM	0	rsym
+
+इसके	PRP	2	r6
+देर	NN	9	k7t
+सुमात्रा	NNP	4	r6
+तट	NN	9	k7p
+५.०	QC	6	r6
+तीव्रता	NN	7	r6
+भूकंप	NN	9	k2
+रिकॉर्ड	NN	9	pof
+किया	VM	0	main
+।	SYM	9	rsym
+
+शाम	NN	0	k7t
+बजे	NN	0	k7t
+अंडमान	NNP	0	r6
+केंद्र	NN	10	k7p
+पैमाने	NNP	10	k7
+५.३	QC	8	r6
+तीव्रता	NN	8	r6
+झटका	NN	10	k2
+महसूस	JJ	10	pof
+किया	VM	0	main
+।	SYM	10	rsym
+

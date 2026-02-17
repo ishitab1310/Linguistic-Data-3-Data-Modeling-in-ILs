@@ -1,0 +1,80 @@
+अभिनेत्री	NN	2	nmod
+चोपड़ा	NNP	3	r6
+पिता	NN	4	nmod
+चोपड़ा	NNP	5	r6
+स्वास्थ्य	NN	8	k1
+अब	PRP	8	k7t
+सुधार	NN	8	k1s
+है	VM	0	main
+।	SYM	8	rsym
+
+चोपड़ा	NNP	6	k2
+दिनों	NN	6	k7t
+मुंबई	NNP	4	r6
+अस्पताल	NNP	6	k7p
+भर्ती	NN	6	pof
+कराया	VM	0	main
+।	SYM	6	rsym
+
+उनकी	PRP	2	r6
+बीमारी	NN	6	rh
+प्रियंका	NNP	4	r6
+शूटिंग	NN	6	k1
+प्रभावित	JJ	6	pof
+हो	VM	0	main
+।	SYM	6	rsym
+
+प्रियंका	NNP	2	r6
+सेक्रेटरी	NN	3	nmod
+मिश्रा	NNP	12	k7a
+सितंबर	NNP	12	k7t
+अमेरिका	NNP	6	jjmod
+आयोजित	JJ	7	nmod
+प्रियंका	NNP	8	r6
+शो	NN	12	k7t
+चोपड़ा	NNP	12	k1
+चेकअप	NN	12	rt
+वहाँ	PRP	12	k2p
+जा	VM	0	main
+।	SYM	12	rsym
+
+अगस्त	NNP	6	k7t
+प्रियंका	NNP	3	r6
+फिल्म	NN	4	nmod
+बरसात	NNP	6	k1
+रिलीज़	NN	6	pof
+होने	VM	0	main
+।	SYM	6	rsym
+
+इसके	PRP	9	vmod
+वह	PRP	9	k1
+कृश	NNP	5	ccof
+मास्टर	NNP	5	ccof
+और	CC	7	nmod
+हो	NNP	5	ccof
+फिल्मों	NN	9	k7
+काम	NN	9	k2
+कर	VM	0	main
+।	SYM	9	rsym
+
+हाल	NN	10	k7t
+उन्होंने	PRP	10	k1
+फिल्म	NN	4	nmod
+डॉन	NNP	5	r6-k2
+रीमेक	NN	6	pof
+की	VM	8	nmod__k1inv
+नाम	NN	8	r6
+फिल्म	NN	10	k2
+साइन	NN	10	pof
+की	VM	0	main
+।	SYM	10	rsym
+
+अख्तर	NNP	2	jjmod
+निर्देशित	JJ	3	nmod
+फिल्म	NN	7	k7
+प्रियंका	NNP	7	k1
+अमान	NNP	6	nmod
+भूमिका	NN	7	k2
+निभाएँगी	VM	0	main
+।	SYM	7	rsym
+

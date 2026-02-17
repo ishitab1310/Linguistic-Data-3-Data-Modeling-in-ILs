@@ -1,0 +1,62 @@
+यदि	CC	0	vmod
+आप	PRP	5	k1
+फोन	NN	4	r6-k2
+इस्तेमाल	NN	5	pof
+करते	VM	1	ccof
+तो	CC	0	main
+सतर्क	JJ	8	pof
+हो	VM	6	ccof
+।	SYM	6	rsym
+
+आपके	PRP	2	r6
+सेलफोन	NN	5	k7
+वायरस	NN	5	k1
+हमला	NN	5	pof
+कर	VM	0	main
+।	SYM	5	rsym
+
+फोन	NN	2	r6
+स्क्रीन	NN	13	k7
+फ्लैश	UNK	4	pof
+होने	VM	5	nmod
+अनबिलिवेबल	NNP	6	ccof
+और	CC	8	nmod
+ऐस	NNP	6	ccof
+नाम	NN	9	r6
+वायरस	NN	13	k1
+आपके	PRP	11	r6
+हैंडसेट	NN	13	k2
+क्षति	NN	13	pof
+पहुंचा	VM	0	main
+।	SYM	13	rsym
+
+एजेंसियों	NN	5	k1
+चेतावनी	NN	4	k2
+जारी	JJ	4	pof
+करते	VM	5	vmod
+कहा	VM	0	main
+कि	CC	5	k2
+फोन	NN	9	k7p
+वायरस	NN	9	k5
+आने	VM	10	nmod
+कॉल	NN	13	k1
+हैंडसेट	NN	13	k2
+क्षति	NN	13	pof
+पहुंचा	VM	6	ccof
+।	SYM	5	rsym
+
+सूत्रों	NN	0	k1
+कहना	VM	0	k1
+है	VM	0	main
+कि	CC	0	k2
+उपभोक्ताओं	NN	0	k1
+अंकों	NN	0	nmod
+कॉल	NN	0	k2
+लेनी	VM	0	ccof
+।	SYM	0	rsym
+
+यह	PRP	3	k1
+वायरस	NN	3	k1s
+हो	VM	0	main
+।	SYM	3	rsym
+

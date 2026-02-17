@@ -1,0 +1,40 @@
+अभाव	NN	12	k7a
+महाराष्ट्र	NNP	12	k7p
+फ्रंट	NNP	4	r6
+सरकार	NN	12	k1
+मंगलवार	NNP	12	k7t
+चुनाव	NN	10	k7t
+अपने	PRP	8	r6
+वादे	NN	10	k2
+अब	PRP	10	k7t
+निभाने	VM	11	r6-k2
+फैसला	NN	12	pof
+किया	VM	0	main
+।	SYM	12	rsym
+
+मोर्चा	NNP	8	k1
+किसानों	NN	8	k4
+मुफ्त	NN	6	k7
+बिजली	NN	6	k2
+मुहैया	JJ	6	pof
+कराने	VM	7	r6-k2
+वादा	NN	8	pof
+किया	VM	0	main
+।	SYM	8	rsym
+
+हालांकि	CC	0	main
+अब	PRP	6	k7t
+किसानों	NN	6	k4
+मुफ्त	NN	6	k7
+बिजली	NN	6	k1
+मिलेगी	VM	1	ccof
+।	SYM	1	rsym
+
+देशमुख	NNP	6	k1
+मंत्रिमंडल	NN	3	r6
+बैठक	NN	6	k7t
+इसकी	PRP	5	r6-k2
+घोषणा	NN	6	pof
+की	VM	0	main
+।	SYM	6	rsym
+

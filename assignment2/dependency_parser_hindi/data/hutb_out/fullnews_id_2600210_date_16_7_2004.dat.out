@@ -1,0 +1,225 @@
+लिमिटेड	NNP	6	k1
+अपने	PRP	3	r6
+कर्मचारियों	NN	6	k4
+साल	NN	6	k7t
+तोहफे	NN	6	k2
+दिए	VM	0	main
+।	SYM	6	rsym
+
+बोर्ड	NNP	2	r6
+बैठक	NN	7	k7
+कर्मियों	NN	4	r6
+भत्तों	NN	5	nmod
+बढ़ोतरी	NN	6	r6-k2
+निर्णय	NN	7	pof
+किया	VM	0	main
+।	SYM	7	rsym
+
+निर्णय	NN	5	k1
+देश	NN	5	k7p
+प्रभाव	NN	5	adv
+लागू	JJ	5	pof
+हो	VM	0	main
+।	SYM	5	rsym
+
+भत्ते	NN	2	ccof
+व	CC	6	k1
+सुविधाएं	NN	2	ccof
+2005	NNP	6	k7t
+प्रभावी	JJ	6	pof
+मानी	VM	0	main
+।	SYM	6	rsym
+
+बैठक	NN	0	k7
+यह	PRP	0	k2
+तय	JJ	0	pof
+किया	VM	0	main
+कि	CC	0	rs
+सुविधाएँ	NN	0	k1
+2006	NNP	0	k7t
+रहेंगी	VM	0	ccof
+।	SYM	0	rsym
+
+2007	NNP	5	k7t
+इसे	PRP	5	k2
+पुनः	RB	5	vmod
+संशोधित	JJ	5	pof
+किया	VM	0	main
+।	SYM	5	rsym
+
+सूत्रों	NN	2	k1
+बताया	VM	0	main
+कि	CC	2	k2
+फरवरी	NNP	10	k7t
+दिल्ली	NNP	10	k7p
+बोर्ड	NNP	7	ccof
+और	CC	9	r6
+यूनियन	NNP	7	ccof
+बैठक	NN	10	k1
+हुई	VM	3	ccof
+।	SYM	2	rsym
+
+घंटे	NN	0	k7t
+चली	VM	0	nmod__k1inv
+बैठक	NN	0	k7t
+ग्रुप	NN	0	nmod
+सी	NNP	0	ccof
+व	CC	0	r6
+डी	NNP	0	ccof
+कर्मचारियों	NN	0	rt
+निर्णय	NN	0	k2
+लिए	VM	0	main
+जो	PRP	0	k2
+देश	NN	0	rt
+लागू	JJ	0	pof
+किए	VM	0	nmod__relc
+।	SYM	0	rsym
+
+कर्मचारियों	NN	2	r6
+भत्ता	NN	4	k2
+प्रतिमाह	NN	4	k2s
+किया	VM	0	main
+।	SYM	4	rsym
+
+पहले	NST	4	k7t
+यह	PRP	4	k1
+रुपये	NN	4	k1s
+था	VM	0	main
+।	SYM	4	rsym
+
+कर्मचारी	NN	5	k4
+अब	PRP	5	k7t
+प्रतिमाह	NN	5	k2
+भत्ता	NN	5	k2s
+पाएंगे	VM	0	main
+।	SYM	5	rsym
+
+भत्ता	NN	7	k1
+वन	JJ	3	ccof
+एवं	CC	5	nmod
+क्लास	JJ	3	ccof
+शहर	NN	7	rt
+लागू	JJ	7	pof
+होगा	VM	0	main
+।	SYM	7	rsym
+
+पहले	NST	4	k7t
+भत्ता	NN	4	k1
+प्रतिमाह	NN	4	k1s
+था	VM	0	main
+।	SYM	4	rsym
+
+इसके	PRP	5	vmod
+शहर	NN	5	rt
+अब	PRP	5	k7t
+महीने	NN	5	k2
+दिए	VM	6	ccof
+जबकि	CC	0	main
+पहले	NST	10	k7t
+रुपये	NN	10	k2
+कर्मचारियों	NN	10	k4
+मिलते	VM	6	ccof
+।	SYM	6	rsym
+
+इसके	PRP	6	vmod
+क्षेत्रों	NN	3	jjmod
+नियुक्त	JJ	4	nmod
+कर्मचारियों	NN	6	k4
+भत्ता	NN	6	k2
+दिया	VM	0	main
+।	SYM	6	rsym
+
+कर्मचारियों	NN	6	k4
+पहले	NST	6	k7t
+रुपये	NN	6	k2
+त्यौहार	NN	6	rt
+एडवांस	NN	6	k2s
+मिलता	VM	0	main
+।	SYM	6	rsym
+
+लेकिन	CC	0	main
+अब	PRP	5	k7t
+वे	PRP	5	k1
+रुपये	NN	5	k2
+ले	VM	6	nmod
+जिसे	PRP	11	k2
+कर्मचारियों	NN	11	k1
+विभाग	NN	11	k4
+किश्तों	NN	11	k7
+वापस	JJ	11	pof
+लौटाना	VM	1	ccof
+।	SYM	1	rsym
+
+कर्मचारियों	NN	3	rt
+दिल	NN	3	k2
+खोलकर	VM	4	nmod
+बीएसएनएल	NNP	11	k1
+अब	PRP	11	k7t
+उनके	PRP	7	r6
+वेतन	NN	8	r6
+लोन	NN	11	k2
+मकान	NN	10	k2
+बनाने	VM	11	rt
+देगा	VM	0	main
+।	SYM	11	rsym
+
+जैसे	CC	0	vmod
+कर्मचारी	NN	3	r6
+वेतन	NN	5	k1
+रुपये	NN	5	k1s
+है	VM	1	ccof
+तो	CC	0	main
+उसे	PRP	12	k4
+लाख	QC	9	r6
+लोन	NN	12	k2
+मकान	NN	11	k2
+बनाने	VM	12	rt
+दिया	VM	6	ccof
+।	SYM	6	rsym
+
+लोन	NN	4	k1
+पहले	NST	4	k7t
+ही	RP	4	k1s
+मिलता	VM	0	main
+।	SYM	4	rsym
+
+लोन	NN	4	k2
+बीएसएनएल	NNP	4	k1
+बैंक	NN	4	k5
+दिलाएगा	VM	5	ccof
+और	CC	0	main
+ब्याज	NN	9	k2
+रेट	NN	9	k7
+भुगतान	NN	9	pof
+करना	VM	5	ccof
+।	SYM	5	rsym
+
+इसके	PRP	4	vmod
+लोन	NN	4	k2
+रुपये	NN	4	k2s
+कर	VM	0	main
+।	SYM	4	rsym
+
+कंप्यूटर	NN	3	ccof
+कार	NN	3	ccof
+NULL	CC	5	r6
+वाहनों	NN	3	ccof
+खरीद	NN	7	rt
+लोन	NN	7	k2
+दिया	VM	0	main
+।	SYM	7	rsym
+
+अब	PRP	3	k7t
+सेवानिवृत्त	JJ	3	pof
+होने	VM	7	k7
+कर्मचारियों	NN	7	k4
+बीएसएनएल	NNP	7	k1
+रुपये	NN	7	k2
+देगा	VM	8	ccof
+NULL	CC	0	main
+पहले	NST	12	k7t
+राशि	NN	12	k1
+1,001	QC	12	k1s
+थी	VM	8	ccof
+।	SYM	8	rsym
+

@@ -1,0 +1,304 @@
+प्राचीनकाल	NN	2	r6
+महाजनपदों	NN	3	nmod
+एक	QC	4	nmod
+कुशीनारा	NNP	15	k1
+आज	NN	6	r6
+कुशीनगर	NNP	4	rs
+अपने	PRP	10	ccof
+वैभवशाली	JJ	10	ccof
+धर्म	NN	10	ccof
+और	CC	15	rt
+शांति	NN	10	ccof
+विश्‍व	NN	13	r6
+मानचित्र	NN	15	k7
+स्‍थान	NN	15	k1s
+रखता	VM	0	main
+।	SYM	15	rsym
+
+काल	NNP	11	k7t
+राम	NNP	3	r6
+पुत्र	NN	4	nmod
+कुश	NNP	5	r6
+राजधानी	NN	6	nmod
+कुशावती	NNP	11	k2
+पूर्व	NNP	11	k7t
+बुद्ध	NNP	11	k1
+अपने	PRP	10	r6
+विश्राम	NN	11	rt
+चुना	VM	0	main
+।	SYM	11	rsym
+
+मल्‍लों	NN	2	r6
+राजधानी	NN	3	k1
+होने	VM	7	rh
+प्राचीनकाल	NN	7	k7t
+स्‍थान	NN	6	r6
+महत्‍व	NN	7	k1
+था	VM	0	main
+।	SYM	7	rsym
+
+धर्मावलंबियों	NN	8	k7a
+लुंबनी	NNP	4	ccof
+बोधगया	NNP	4	ccof
+और	CC	8	ras-k1
+सारनाथ	NNP	4	ccof
+स्‍थान	NN	7	r6
+महत्‍व	NN	8	k1
+है	VM	0	main
+।	SYM	8	rsym
+
+राजाओं	NN	2	r6
+काल	NN	13	k7t
+चीन	NNP	13	k5
+सांग	NNP	6	ccof
+फाह्यान	NNP	6	ccof
+और	CC	13	k1
+इत्‍सिंग	NNP	6	ccof
+अपने	PRP	9	r6
+वृत्तांत	NN	13	k7
+स्‍थान	NN	11	r6
+गौरव	NN	12	r6-k2
+वर्णन	NN	13	pof
+किया	VM	0	main
+।	SYM	13	rsym
+
+कुशीनगर	NNP	2	r6
+महत्‍व	NN	4	k1
+तीर्थ	NN	4	k7
+है	VM	0	main
+।	SYM	4	rsym
+
+1876	NNP	0	k7t
+स्‍थान	NN	0	k1
+बार	NN	0	rbmod
+फिर	RB	0	adv
+प्रकाश	NN	0	k7
+आया	VM	0	main
+जब	PRP	0	k7t
+पुरातत्‍ववेत्‍ता	NN	0	nmod
+कर्निंघम	NNP	0	k1
+मूर्ति	NNP	0	r6-k2
+खोज	NN	0	pof
+की	VM	0	nmod__relc
+।	SYM	0	rsym
+
+आइए	VM	2	rad
+करें	VM	0	main
+सैर	NN	2	pof
+-	SYM	2	rsym
+
+कुशीनगर	NNP	2	r6
+सीमा	NN	4	k7p
+प्रवेश	NN	4	pof
+करते	VM	8	vmod
+प्रवेशद्वार	NN	8	k1
+आपका	PRP	7	r6-k2
+स्वागत	NN	8	pof
+करता	VM	0	main
+।	SYM	8	rsym
+
+इसके	PRP	6	k7t
+तौर	NN	6	k7
+पर्यटकों	NN	4	r6
+निगाह	NN	6	k1
+मंदिर	NNP	6	rd
+पड़ती	VM	0	main
+।	SYM	6	rsym
+
+वैसे	RB	3	k7p
+ही	RP	3	k7p
+दिखता	VM	4	nmod__k1inv
+पगोडा	NN	9	k1
+अपने	PRP	6	r6
+आकर्षण	NN	9	rh
+सभी	PRP	8	r6-k2
+मन	NN	9	pof
+मोह	VM	0	main
+।	SYM	9	rsym
+
+मंदिर	NNP	0	main
+-	SYM	1	rsym
+
+कुशीनगर	NNP	2	r6
+महत्‍व	NN	4	k1
+मंदिर	NNP	4	rh
+है	VM	0	main
+।	SYM	4	rsym
+
+मंदिर	NN	2	r6
+स्‍थापत्‍य	NN	6	k1
+अजंता	NNP	4	r6
+गुफाओं	NN	6	k3
+प्रेरित	JJ	6	k1s
+है	VM	0	main
+।	SYM	6	rsym
+
+मंदिर	NN	2	r6
+डाट	NN	7	k1
+हूबहू	RB	7	adv
+अजंता	NNP	5	r6
+गुफाओं	NN	6	r6
+डाट	NN	7	k1u
+हैं	VM	0	main
+।	SYM	7	rsym
+
+मंदिर	NN	0	k7p
+बुद्ध	NNP	0	r6
+लेटी	VM	0	nmod__k1inv
+मुद्रा	NN	0	nmod
+मीटर	NN	0	jjmod
+लंबी	JJ	0	nmod
+मूर्ति	NN	0	k1
+है	VM	0	main
+जो	PRP	0	k1
+मिट्टी	NN	0	r6
+NULL	NN	0	k1s
+बनी	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मंदिर	NN	0	k1
+स्‍थान	NN	0	k7p
+बनाया	VM	0	main
+जहाँ	PRP	0	k7p
+मूर्ति	NN	0	k1
+निकाली	VM	0	nmod__relc
+।	SYM	0	rsym
+
+मंदिर	NN	2	r6
+हिस्‍से	NN	4	k7p
+स्‍तूप	NN	4	k1
+है	VM	0	main
+।	SYM	4	rsym
+
+यहाँ	PRP	4	k7p
+बुद्ध	NNP	3	r6-k2
+संस्‍कार	NN	4	pof
+किया	VM	0	main
+।	SYM	4	rsym
+
+मूर्ति	NN	6	k1
+अजंता	NNP	3	r6
+बुद्ध	NNP	4	r6
+मूर्ति	NNP	5	r6
+प्रतिकृति	NN	6	k1s
+है	VM	0	main
+।	SYM	6	rsym
+
+वैसे	RB	5	sent-adv
+मूर्ति	NN	3	r6
+काल	NN	5	k1
+अजंता	NNP	5	vmod
+है	VM	0	main
+।	SYM	5	rsym
+
+वर्ष	NN	3	k7t
+मूर्ति	NN	3	k1
+NULL	VM	0	main
+।	SYM	3	rsym
+
+मंदिर	NN	0	k7p
+विहार	NN	0	ccof
+जहाँ	PRP	0	k7p
+भिक्षु	NN	0	k1
+रहा	VM	0	rs
+और	CC	0	ccof
+चैत्‍य	NN	0	ccof
+जहाँ	PRP	0	k7p
+भिक्षु	NN	0	k1
+पूजा	NN	0	pof
+करते	VM	0	ccof
+या	CC	0	rs
+ध्‍यान	NN	0	pof
+लगाते	VM	0	ccof
+भग्‍नावशेष	NN	0	ccof
+और	CC	0	k1
+खंडहर	NN	0	ccof
+मौजूद	JJ	0	k1s
+हैं	VM	0	main
+जो	PRP	0	k1
+अशोककालीन	JJ	0	k1s
+बताए	VM	0	nmod__relc
+।	SYM	0	rsym
+
+परिसर	NN	0	k2
+लगा	VM	0	nmod__k1inv
+पार्क	NN	0	k1
+है	VM	0	main
+जहाँ	PRP	0	k7p
+पर्यटकों	NN	0	r6
+जमावड़ा	NN	0	k1
+लगा	VM	0	nmod__relc
+।	SYM	0	rsym
+
+वैसे	RB	5	sent-adv
+परिसर	NN	5	k7p
+शांति	NN	4	r6
+वातावरण	NN	5	k1
+है	VM	0	main
+।	SYM	5	rsym
+
+सुबह	NN	2	ccof
+और	CC	13	k7t
+शाम	NN	2	ccof
+अगरबत्‍तियों	NN	5	ccof
+और	CC	13	k3
+गच्‍छामि	NNP	7	r6
+घोष	NN	5	ccof
+वातावरण	NN	13	k1
+भी	RP	10	jjmod
+पवित्र	JJ	11	ccof
+और	CC	13	k1s
+शांतिदायक	JJ	11	ccof
+लगता	VM	0	main
+।	SYM	13	rsym
+
+मंदिर	NNP	0	main
+-	SYM	1	rsym
+
+मंदिर	NNP	2	nmod
+दूर	NST	3	nmod
+आगे	NST	6	k7p
+कुँवर	NNP	5	r6
+मंदिर	NN	6	k1
+है	VM	0	main
+।	SYM	6	rsym
+
+इसके	PRP	2	r6
+लोगों	NN	5	k7
+विष्‍णु	NNP	4	r6
+अवतार	NN	5	k1
+होने	VM	6	r6
+मान्‍यता	NN	8	k1
+प्रचलित	JJ	8	k1s
+है	VM	0	main
+।	SYM	8	rsym
+
+मूर्ति	NN	4	k1
+वर्ष	NN	4	k7t
+पुराना	JJ	4	k1s
+होने	VM	5	r6
+प्रमाण	NN	6	k1
+मिलता	VM	0	main
+।	SYM	6	rsym
+
+कुँवर	NNP	2	r6
+मूर्ति	NN	4	k1
+पत्‍थर	NN	4	k5
+बनी	VM	0	main
+।	SYM	4	rsym
+
+इसकी	PRP	2	r6
+ऊँचाई	NN	4	k1
+मीटर	NN	4	k1s
+है	VM	0	main
+।	SYM	4	rsym
+
+मूर्ति	NN	7	k1
+बुद्ध	NNP	3	r6
+बोधि	NN	5	k2
+प्राप्‍त	JJ	5	pof
+करने	VM	6	r6
+मुद्रा	NN	7	k7
+है	VM	0	main
+।	SYM	7	rsym
+
