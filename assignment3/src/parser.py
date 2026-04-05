@@ -1,61 +1,103 @@
+"""
+parser.py
+---------
+Loads IIIT/Paninian dependency treebanks (Hindi .dat and Telugu .conll).
+
+Format: 10-column tab-separated CoNLL with Paninian annotation.
+Columns: id  form  lemma  coarse_pos  fine_pos  feats  head  deprel  _  _
+
+Features field uses pipe-separated key-value pairs with '-' as separator:
+    cat-n|gen-m|num-sg|pers-3|case-o|vib-0_ka|tam-0|chunkId-NP|...
+
+Sentences are separated by blank lines.
+"""
+
 import os
+import re
 import pandas as pd
 
 
-def read_conll(file_path):
+def _parse_id(val: str):
+    if re.fullmatch(r"\d+", val):
+        return int(val)
+    return None
 
+
+def _parse_head(val: str):
+    if re.fullmatch(r"\d+", val):
+        return int(val)
+    return None
+
+
+def parse_file(path: str, lang: str = "") -> pd.DataFrame:
     rows = []
+    sent_id = 0
 
-    with open(file_path, encoding="utf8") as f:
+    with open(path, "r", encoding="utf-8", errors="replace") as fh:
+        for line in fh:
+            line = line.rstrip("\n")
 
-        for line in f:
-
-            line = line.strip()
-
-            if not line or line.startswith("#"):
+            if line == "":
+                sent_id += 1
                 continue
 
-            parts = line.split()
+            if line.startswith("#"):
+                continue
 
+            parts = line.split("\t")
             if len(parts) < 8:
                 continue
 
-            try:
-                rows.append({
-                    "id": int(parts[0]),
-                    "form": parts[1],
-                    "lemma": parts[2],
-                    "upos": parts[3],
-                    "xpos": parts[4],
-                    "feats": parts[5],
-                    "head": int(parts[6]),
-                    "deprel": parts[7]
-                })
-            except:
+            tok_id = _parse_id(parts[0])
+            if tok_id is None:
                 continue
 
-    return pd.DataFrame(rows)
+            head = _parse_head(parts[6])
+            feats_raw = parts[5] if parts[5] != "_" else None
+
+            row = {
+                "sent_id":    sent_id,
+                "id":         tok_id,
+                "form":       parts[1],
+                "lemma":      parts[2],
+                "coarse_pos": parts[3],
+                "fine_pos":   parts[4],
+                "feats":      feats_raw,
+                "head":       head,
+                "deprel":     parts[7] if parts[7] != "_" else None,
+                "lang":       lang,
+            }
+            rows.append(row)
+
+    df = pd.DataFrame(rows)
+    for col in ("id", "head"):
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df
 
 
-def load_telugu_treebank(file_path):
+def load_treebank(root: str, lang: str,
+                  extensions=(".dat", ".conll", ".conllu", ".conll06")) -> pd.DataFrame:
+    """
+    Recursively load all treebank files under root.
+    """
+    frames = []
 
-    return read_conll(file_path)
+    for dirpath, _, filenames in os.walk(root):
+        for fname in filenames:
+            if any(fname.endswith(ext) for ext in extensions):
+                fpath = os.path.join(dirpath, fname)
+                try:
+                    df = parse_file(fpath, lang=lang)
+                    if not df.empty:
+                        frames.append(df)
+                except Exception as exc:
+                    print(f"[parser] Warning: could not parse {fpath}: {exc}")
 
+    if not frames:
+        raise FileNotFoundError(
+            f"No treebank files found under '{root}' with extensions {extensions}."
+        )
 
-def load_hindi_treebank(folder_path):
-
-    all_rows = []
-
-    for root, _, files in os.walk(folder_path):
-
-        for f in files:
-
-            if f.endswith(".dat"):
-
-                file_path = os.path.join(root, f)
-
-                df = read_conll(file_path)
-
-                all_rows.append(df)
-
-    return pd.concat(all_rows, ignore_index=True)
+    combined = pd.concat(frames, ignore_index=True)
+    print(f"[parser] Loaded {lang}: {len(combined):,} tokens from {len(frames)} file(s).")
+    return combined

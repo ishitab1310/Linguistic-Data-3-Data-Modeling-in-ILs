@@ -1,44 +1,50 @@
-from parser import load_telugu_treebank, load_hindi_treebank
-from dependency_analysis import (
-    compute_dependency_distance,
-    summarize_distances,
-    plot_histogram,
-    top_dependency_relations
-)
-from morphology_analysis import compare_features
-from stats_tests import dependency_distance_ttest
+"""
+main.py
+-------
+Run from the project root (assignment3/):
+
+    python src/main.py
+
+Assumes treebanks are at:
+    data/hindi/   -- .dat files
+    data/telugu/  -- .conll files
+"""
+
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
+
+from parser              import load_treebank
+from dependency_analysis import run_all as run_dependency
+from morphology_analysis import run_all as run_morphology
 
 
-print("Loading Telugu treebank...")
-telugu = load_telugu_treebank("data/telugu/iiit_hcu_intra_chunk_v1.conll")
-
-print("Loading Hindi treebank...")
-hindi = load_hindi_treebank("data/hindi")
-
-print("\nTelugu tokens:", len(telugu))
-print("Hindi tokens:", len(hindi))
+HINDI_DIR  = os.path.join("data", "hindi")
+TELUGU_DIR = os.path.join("data", "telugu")
 
 
-# Dependency distance
-telugu_dist = compute_dependency_distance(telugu)
-hindi_dist = compute_dependency_distance(hindi)
+def main():
+    os.makedirs("results", exist_ok=True)
+
+    print("\n[main] Loading treebanks …")
+    hindi  = load_treebank(HINDI_DIR,  lang="Hindi",  extensions=(".dat",))
+    telugu = load_treebank(TELUGU_DIR, lang="Telugu", extensions=(".conll",))
+
+    print("\n[main] Running dependency analysis (Q1–Q4) …")
+    dep = run_dependency(telugu, hindi)
+
+    print("\n[main] Running morphology analysis (Q5–Q6) …")
+    morph = run_morphology(telugu, hindi)
+
+    print("\n" + "="*50)
+    print("Done. All outputs in results/")
+    print("="*50)
+    sig = dep["sig"]
+    print(f"  Telugu mean dep dist : {dep['telugu_stats']['mean']}")
+    print(f"  Hindi  mean dep dist : {dep['hindi_stats']['mean']}")
+    print(f"  Mann-Whitney U p     : {sig['p_value']:.4e}  significant={sig['significant']}")
 
 
-summarize_distances(telugu_dist, "Telugu")
-summarize_distances(hindi_dist, "Hindi")
-
-
-plot_histogram(telugu_dist, hindi_dist)
-
-
-# Top dependency relations
-top_dependency_relations(telugu, "Telugu")
-top_dependency_relations(hindi, "Hindi")
-
-
-# Significance testing
-dependency_distance_ttest(telugu_dist, hindi_dist)
-
-
-# Morphological comparison
-compare_features(telugu, hindi)
+if __name__ == "__main__":
+    main()

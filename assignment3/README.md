@@ -1,158 +1,102 @@
-# Assignment 3: Data Modeling in Indian Languages 
+# Assignment 3 — Data Analysis in Psycholinguistics
 
-This repository contains the implementation and analysis for **Assignment 3** of Linguistic Data 3. The project focuses on **dependency structure analysis and morphological analysis in parsed linguistic data**.
-
-The project processes dependency-parsed sentences, computes linguistic statistics, and performs statistical testing using **Python and R**. Results include **histograms, statistical summaries, and significance testing**.
-
----
-
-# Project Structure
+## Project Structure
 
 ```
 assignment3/
-│
-├── results/
-│   ├── dependency_distance_histogram.png
-│   ├── dependency_statistics.csv
-│   └── morphology_statistics.csv
-│
-│
-├── src/
-│   ├── dependency_analysis.py
-│   ├── morphology_analysis.py
-│   ├── parser.py
-│   ├── stats_tests.py
-│   ├── main.py
-│   ├── analysis.R
-│   └── test_load.py
-│
-└── README.md
+├── README.md
+├── data/
+│   ├── hindi/          ← Hindi .dat files (HDTB, IIIT/Paninian format)
+│   └── telugu/         ← Telugu .conll file (iiit_hcu_intra_chunk_v1.conll)
+├── results/            ← generated plots and CSVs
+└── src/
+    ├── parser.py               CoNLL/Paninian loader (.dat + .conll)
+    ├── dependency_analysis.py  Q1–Q4
+    ├── morphology_analysis.py  Q5–Q6
+    ├── main.py                 Part 1 runner
+    ├── analysis.R              Part 2 (all 9 questions)
+    └── report.tex              LaTeX report
 ```
 
 ---
 
-# Objective
+## Treebank Format
 
+Both treebanks use the **IIIT/Paninian annotation scheme** — a 10-column
+tab-separated CoNLL format with pipe-separated features using `-` as the
+key-value separator:
 
-We:
+```
+id  form  lemma  coarse_pos  fine_pos  feats  head  deprel  _  _
+```
 
-- Parse dependency tree data
-- Compute dependency distance statistics
-- Analyze morphological patterns
-- Visualize distributions
-- Perform statistical testing in R
+Features example:
+```
+cat-n|gen-m|num-sg|pers-3|case-o|vib-0_का|tam-0|chunkId-NP|chunkType-head
+```
+
+Morphological keys extracted: `cat`, `gen`, `num`, `pers`, `case`, `vib`, `tam`
+(chunk metadata keys like `chunkId`, `chunkType`, `stype`, `voicetype` are skipped).
 
 ---
 
-# Requirements
+## Part 1 — Corpus Analysis (Python)
 
-## Python
+### Requirements
 
-Python version:
-```
-Python 3.10
-```
-
-Install required packages:
-
-```
-pip install pandas matplotlib numpy scipy
+```bash
+pip install pandas numpy matplotlib seaborn scipy
 ```
 
-## R
+### Data
 
-R version:
-```
-R 4.0
-```
+- Hindi: download HDTB and place `.dat` files in `data/hindi/`
+- Telugu: place `iiit_hcu_intra_chunk_v1.conll` in `data/telugu/`
 
-Required packages:
+### Run
 
-```
-install.packages("ggplot2")
-```
-
----
-
-# Running the Python Pipeline
-
-Navigate to the assignment directory:
-
-```
+```bash
 cd assignment3
-```
-
-Run the main script:
-
-```
 python src/main.py
 ```
 
-This script will:
+### Outputs
 
-1. Load parsed sentences
-2. Compute dependency distance statistics
-3. Run morphological analysis
-4. Save statistics
-5. Generate histogram plots
-
-Output files will appear in:
-
-```
-results/
-```
-
----
-
-
-
-# Output
-
-The following outputs are generated.
-
-## Dependency Distance Histogram
-
-Location:
-
-```
-results/dependency_distance_histogram.png
-```
-
-This plot shows the distribution of dependency distances across parsed sentences.
-
-## Statistics Tables
-
-Saved as:
-
-```
-results/dependency_statistics.csv
-results/morphology_statistics.csv
-```
-
-These tables contain summary statistics used for further analysis.
+| File | Question |
+|------|----------|
+| `dependency_distance_histogram.png` | Q1 |
+| `dependency_density.png` | Q1 |
+| `dependency_boxplot.png` | Q1 |
+| `dependency_summary.csv` | Q1, Q4 |
+| `dependency_relations_comparison.png` | Q2 |
+| `hindi_top_dependencies.csv` | Q2 |
+| `telugu_top_dependencies.csv` | Q2 |
+| `hindi_morph_features.csv / .png` | Q5 |
+| `telugu_morph_features.csv / .png` | Q5 |
+| `morph_feature_comparison.csv / .png` | Q5 |
+| `morph_feature_heatmap.png` | Q5 |
+| `morph_value_gen/case/num/pers.png` | Q5–Q6 |
 
 ---
 
-# Methodology
+## Part 2 — Experimental Data (R)
 
-The pipeline follows these steps:
+### Requirements
 
-1. **Dependency Parsing**
-   - Load sentences in CoNLL-U format
-   - Extract head–dependent relations
+```r
+install.packages(c("ggplot2", "dplyr", "stringr"))
+```
 
-2. **Dependency Distance Calculation**
-   - Distance = |dependent index − head index|
+### Data
 
-3. **Morphological Analysis**
-   - Extract morphological features
-   - Compute feature distributions
+Download `pset_1_data` from MIT OCW 9.59J:
+https://ocw.mit.edu/courses/9-59j-lab-in-psycholinguistics-spring-2017/resources/pset_1_data/
 
-4. **Visualization**
-   - Plot dependency distance histograms
+Save as `data/pset_1_data.txt` (tab-separated).
 
-5. **Statistical Testing**
-   - Conduct statistical comparisons using R
+### Run
 
----
-
+```bash
+Rscript src/analysis.R
+# or open in RStudio and source()
+```

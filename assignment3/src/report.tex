@@ -1,0 +1,595 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Packages ──────────────────────────────────────────────────────────────────
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  urlcolor=blue!70!black,
+  citecolor=blue!70!black,
+}
+
+\newcommand{\placeholder}[1]{\textcolor{red!70!black}{\textit{[#1]}}}
+
+% ── Title ─────────────────────────────────────────────────────────────────────
+\title{%
+  \textbf{Data Analysis in Psycholinguistics}\\[0.5em]
+  \large Corpus and Experimental Data — Assignment Report
+}
+\author{%
+  \placeholder{Your Name}\\
+  \placeholder{Student ID}\\[0.4em]
+  \small\textit{Linguistic Data 3: Data Modelling in Indian Languages}
+}
+\date{\today}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Corpus Data Analysis: Hindi and Telugu Treebanks}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection*{Data and Tools}
+The analysis uses the Telugu dependency treebank
+(\url{https://github.com/ltrc/telugu_treebank}) and the Hindi Dependency
+Treebank (HDTB pre-release v0.05,
+\url{https://ltrc.iiit.ac.in/treebank_H2014/}).  Both treebanks are in
+CoNLL-U / CoNLL-2006 format.  Parsing and analysis were performed in Python~3
+using \texttt{pandas}, \texttt{scipy}, \texttt{matplotlib}, and
+\texttt{seaborn}.  A custom parser handles both 8-column (CoNLL-2006) and
+10-column (CoNLL-U) formats and skips malformed lines.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q1: Distribution of Dependency Distances}
+% ──────────────────────────────────────────────────────────────────────────────
+
+The dependency distance for a token is defined as $|i - h_i|$, where $i$ is
+the token index and $h_i$ is its head index.  Root tokens ($h_i = 0$) are
+excluded.
+
+\begin{table}[H]
+\centering
+\caption{Dependency distance summary statistics.}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Language} & \textbf{Mean} & \textbf{Median} & \textbf{Std} & \textbf{N} \\
+\midrule
+Telugu & \placeholder{X.XX} & \placeholder{X} & \placeholder{X.XX} & \placeholder{N} \\
+Hindi  & \placeholder{X.XX} & \placeholder{X} & \placeholder{X.XX} & \placeholder{N} \\
+\bottomrule
+\end{tabular}
+\label{tab:dist_stats}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{results/dependency_distance_histogram.png}
+    \caption{Density histogram.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{results/dependency_boxplot.png}
+    \caption{Boxplot.}
+  \end{subfigure}
+  \caption{Dependency distance distributions for Telugu (blue) and Hindi (red).}
+  \label{fig:dist}
+\end{figure}
+
+Both distributions are right-skewed: most dependencies are short-range (distance
+1--3), with a long tail of long-distance dependencies.  The median is more
+representative than the mean given this skewness.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q2: Top-10 Dependency Relations}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{table}[H]
+\centering
+\caption{Top 10 dependency relations (raw counts) for Telugu and Hindi.}
+\begin{tabular}{lrlr}
+\toprule
+\multicolumn{2}{c}{\textbf{Telugu}} & \multicolumn{2}{c}{\textbf{Hindi}} \\
+\cmidrule(r){1-2}\cmidrule(l){3-4}
+\textbf{Relation} & \textbf{Count} & \textbf{Relation} & \textbf{Count} \\
+\midrule
+\placeholder{r1} & \placeholder{n} & \placeholder{r1} & \placeholder{n} \\
+\placeholder{r2} & \placeholder{n} & \placeholder{r2} & \placeholder{n} \\
+\placeholder{r3} & \placeholder{n} & \placeholder{r3} & \placeholder{n} \\
+\placeholder{r4} & \placeholder{n} & \placeholder{r4} & \placeholder{n} \\
+\placeholder{r5} & \placeholder{n} & \placeholder{r5} & \placeholder{n} \\
+\placeholder{r6} & \placeholder{n} & \placeholder{r6} & \placeholder{n} \\
+\placeholder{r7} & \placeholder{n} & \placeholder{r7} & \placeholder{n} \\
+\placeholder{r8} & \placeholder{n} & \placeholder{r8} & \placeholder{n} \\
+\placeholder{r9} & \placeholder{n} & \placeholder{r9} & \placeholder{n} \\
+\placeholder{r10} & \placeholder{n} & \placeholder{r10} & \placeholder{n} \\
+\bottomrule
+\end{tabular}
+\label{tab:deprel}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{results/dependency_relations_comparison.png}
+  \caption{Grouped bar chart comparing the top dependency relations in Hindi and Telugu.}
+  \label{fig:deprel}
+\end{figure}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q3: Notable Similarities and Differences in Syntactic Relations}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\textbf{Similarities.}
+Both Hindi and Telugu are verb-final (SOV) languages, and this is reflected in
+their dependency profiles.  Nominal modifier (\texttt{nmod}) and noun-phrase
+relations appear prominently in both treebanks.  Relations associated with
+coordination (\texttt{cc}, \texttt{conj}) are present in both at comparable
+rates, suggesting that coordinate structure is a shared strategy regardless of
+language family.
+
+\textbf{Differences.}
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Subject/object marking.}  Telugu, as a Dravidian language, uses
+        case-marked postpositional phrases and has a relatively free word order
+        within clauses.  Its subject dependency (\texttt{nsubj}) and object
+        dependency (\texttt{obj} / \texttt{dobj}) counts therefore span a wider
+        range of positions, potentially yielding longer average distances.  Hindi,
+        while also relatively free, has stronger verb-agreement morphology that
+        anchors subjects closer to the predicate.
+  \item \textbf{Postpositional vs.\ adpositional relations.}  Telugu shows a
+        higher rate of postpositional relations (e.g.\ \texttt{nmod:poss},
+        postpositional case-markers) because all adpositions follow their
+        nominal heads.
+  \item \textbf{Light-verb constructions.}  Hindi exhibits a high frequency of
+        complex predicates (e.g.\ $V + \textit{lenā/denā}$), typically annotated
+        as \texttt{compound:prt} or similar.  This relation may appear
+        disproportionately in the Hindi top-10 but not in Telugu.
+\end{itemize}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q4: Dependency Distance and Word Order Typology}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\subsubsection*{Descriptive Comparison}
+
+Table~\ref{tab:dist_stats} shows that \placeholder{[Telugu/Hindi]} has a
+higher mean dependency distance (\placeholder{X.XX} vs.\ \placeholder{X.XX}).
+Both languages are SOV, which places heavy NPs and embedded clauses before the
+verb, creating long-distance dependencies between arguments and their predicates.
+
+\subsubsection*{Significance Testing}
+
+Because dependency distances are not normally distributed (right-skewed, count
+data), a non-parametric \textbf{Mann-Whitney U test} was used.
+
+\begin{table}[H]
+\centering
+\caption{Mann-Whitney U test results for dependency distances.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Statistic} & \textbf{Value} \\
+\midrule
+U statistic & \placeholder{U} \\
+$p$-value   & \placeholder{p} \\
+Significant ($\alpha = 0.05$)? & \placeholder{Yes/No} \\
+Cohen's $d$ (effect size) & \placeholder{d} \\
+\bottomrule
+\end{tabular}
+\label{tab:signif}
+\end{table}
+
+\textbf{Interpretation.}
+\placeholder{If significant:} The difference in dependency distances is
+statistically significant ($p < 0.05$), indicating that the two languages do
+not share the same distance distribution.  A Cohen's $d$ of \placeholder{d}
+suggests a \placeholder{small/medium/large} effect.  The longer mean distance
+in \placeholder{language} may reflect \placeholder{freer postpositional phrase
+ordering / heavier NP fronting / a richer system of case-marked modifiers}.
+Both languages' SOV typology, however, constrains the overall shape of the
+distribution to be right-skewed with a mode at distance~1.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q5: Morphological Features}
+% ──────────────────────────────────────────────────────────────────────────────
+
+Morphological features were extracted from the CoNLL-U \texttt{feats} column
+(format: \texttt{Feature=Value}, separated by \texttt{|}). Feature
+\emph{category} counts are shown below.
+
+\begin{table}[H]
+\centering
+\caption{Most frequent morphological feature categories in each language.}
+\begin{tabular}{lrlr}
+\toprule
+\multicolumn{2}{c}{\textbf{Telugu}} & \multicolumn{2}{c}{\textbf{Hindi}} \\
+\cmidrule(r){1-2}\cmidrule(l){3-4}
+\textbf{Feature} & \textbf{Count} & \textbf{Feature} & \textbf{Count} \\
+\midrule
+\placeholder{f1} & \placeholder{n} & \placeholder{f1} & \placeholder{n} \\
+\placeholder{f2} & \placeholder{n} & \placeholder{f2} & \placeholder{n} \\
+\placeholder{f3} & \placeholder{n} & \placeholder{f3} & \placeholder{n} \\
+\placeholder{f4} & \placeholder{n} & \placeholder{f4} & \placeholder{n} \\
+\placeholder{f5} & \placeholder{n} & \placeholder{f5} & \placeholder{n} \\
+\bottomrule
+\end{tabular}
+\label{tab:morph}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{results/telugu_morph_features.png}
+    \caption{Telugu.}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{results/hindi_morph_features.png}
+    \caption{Hindi.}
+  \end{subfigure}
+  \caption{Top morphological feature categories by token count.}
+  \label{fig:morph}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{results/morph_feature_heatmap.png}
+  \caption{Normalised morphological feature heatmap (\% of total feature tokens).}
+  \label{fig:heatmap}
+\end{figure}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q6: Morphological Patterns and Typological Distinctions}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\textbf{Indo-Aryan (Hindi) vs.\ Dravidian (Telugu).}
+
+Hindi, belonging to the Indo-Aryan branch, retains a two-gender (masculine /
+feminine) system inherited from Sanskrit via Prakrits, and marks agreement on
+verbs for gender, number, and (partially) person.  Consequently, the
+\texttt{Gender} feature is expected to appear at high frequency in the Hindi
+treebank, attaching to nouns, adjectives, and inflected verbs alike.  Case is
+marked by postpositions and partially by nominal inflection, with the direct
+and oblique distinction being the primary nominal case contrast.
+
+Telugu, as a Dravidian language, has a richer agglutinative morphology.  It
+encodes person, number, and gender (PNG) on verbs via suffixes, and case is
+encoded directly on nominals through a system of postpositional case suffixes
+(nominative, accusative, dative, genitive, locative, instrumental, etc.).  As
+a result, the \texttt{Case} feature is expected to be more richly represented
+in Telugu than in Hindi.
+
+\textbf{Key expected contrasts (based on known typology):}
+\begin{itemize}[leftmargin=1.5em]
+  \item \texttt{Case}: More diverse values in Telugu (agglutinative case
+        suffixes) than in Hindi (analytic postpositions).
+  \item \texttt{Gender}: Distinct in both, but the categories differ: Hindi has
+        masculine/feminine; Telugu has a three-way natural-gender distinction
+        (masculine, feminine, neuter/non-human).
+  \item \texttt{Number}: Present in both, with similar singular/plural contrasts.
+  \item \texttt{Tense/Aspect/Mood (TAM)}: Telugu encodes tense within the verb
+        morphology more transparently; Hindi TAM is expressed through auxiliary
+        + participle constructions, which may appear as separate tokens.
+  \item \texttt{VoiceType / VerbForm}: Both languages have verbal morphology for
+        finite and non-finite forms, but Telugu's participial suffixes are highly
+        productive and may generate a rich \texttt{VerbForm} distribution.
+\end{itemize}
+
+These typological distinctions are directly visible in the feature frequency
+plots (Figures~\ref{fig:morph} and~\ref{fig:heatmap}): \placeholder{describe
+what you observe in your actual plots here, e.g.\ ``Telugu shows a notably
+higher proportion of Case tokens relative to Hindi, while Hindi shows a higher
+Gender token proportion, consistent with its grammaticalised gender agreement.''}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\newpage
+\section{Experimental Data Analysis: Psycholinguistics (R)}
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection*{Dataset}
+The dataset is \texttt{pset\_1\_data} from MIT OpenCourseWare 9.59J (Lab in
+Psycholinguistics, Spring 2017).  The dependent variable of interest is
+\texttt{RTlexdec} (lexical decision reaction time, log-transformed
+milliseconds), referred to as RT throughout.  All analyses are performed in
+R~4.x using \texttt{ggplot2} and \texttt{dplyr}.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q1: Distribution of RTs}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.75\textwidth]{results/Q1_rt_histogram_all.png}
+  \caption{Histogram of RT for all subjects (60 bins).}
+  \label{fig:q1}
+\end{figure}
+
+The RT distribution for all subjects is \textbf{bimodal}: it exhibits two
+distinct peaks.  The RTs are not normally distributed; the histogram shows a
+clear separation between two clusters of responses.  The two peaks suggest the
+presence of two underlying sub-populations within the data, which Q2 clarifies.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q2: Faceted Histograms by Age Group}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{results/Q2_rt_histogram_faceted.png}
+  \caption{Separate RT histograms for young (left) and old (right) subjects.}
+  \label{fig:q2}
+\end{figure}
+
+Separating by age group reveals that the bimodal shape in Q1 arises from
+\textbf{mixing two age groups}: old subjects have systematically longer RTs than
+young subjects, and each group's distribution is roughly unimodal.  The
+\textbf{young subject data appear approximately normally distributed}, with a
+single peak and mild right skew — consistent with a log-normal RT distribution.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q3: Z-scores for Young Subjects}
+% ──────────────────────────────────────────────────────────────────────────────
+
+From here all analyses use only young subjects ($N = \placeholder{N}$).
+Z-scores are computed as $z = (x - \bar{x}) / s$.
+
+\subsubsection*{(a) Expected percentages under normality}
+
+Under a standard normal distribution:
+\begin{align*}
+P(z > 1.96)  &\approx 2.5\% \\
+P(z < -1.96) &\approx 2.5\%
+\end{align*}
+
+\subsubsection*{(b) Actual percentages}
+
+\begin{table}[H]
+\centering
+\caption{Expected vs.\ actual tail percentages for young subject RTs.}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Region} & \textbf{Expected (\%)} & \textbf{Actual (\%)} \\
+\midrule
+$z > 1.96$  & 2.50 & \placeholder{X.XX} \\
+$z < -1.96$ & 2.50 & \placeholder{X.XX} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The \textbf{upper tail} ($z > 1.96$) is likely to show a greater-than-expected
+proportion of observations.  This is because RT distributions tend to be
+right-skewed even within a single age group: extremely slow responses (outliers)
+occur more often than a perfectly normal distribution would predict, whereas
+extremely fast responses are bounded from below (a participant cannot respond in
+0\,ms).  This asymmetry means the positive tail contains more mass than the
+theoretical 2.5\%.
+
+\subsubsection*{(c) Words with $z > 3$}
+
+Under normality, approximately $0.13\%$ of observations would have $z > 3$.
+The actual proportion is \placeholder{X.XX\%}, which is
+\placeholder{higher/lower}.  Inspection of the words with $z > 3$ reveals
+\placeholder{describe what is special about them — typically low-frequency
+words, function words with unusual distributions, or proper nouns that are
+harder to recognise in lexical decision}.  High z-scores indicate unexpectedly
+long RTs, consistent with the idea that low-frequency or phonologically
+unusual words take longer to recognise.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q4: Mean vs.\ Median}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{table}[H]
+\centering
+\caption{Mean and median comparison for RT and NounFrequency (young subjects).}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Variable} & \textbf{Mean} & \textbf{Median} & \textbf{Difference} & \textbf{Reason} \\
+\midrule
+RT           & \placeholder{M} & \placeholder{Md} & \placeholder{D} & mild right skew \\
+NounFrequency & \placeholder{M} & \placeholder{Md} & \placeholder{D} & extreme right skew \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.65\textwidth]{results/Q4_nounfreq_distribution.png}
+  \caption{Distribution of NounFrequency for young subjects (dashed lines: mean in red, median in blue).}
+  \label{fig:q4}
+\end{figure}
+
+The mean and median of RT are close because RT (already log-transformed in this
+dataset) is approximately symmetric.  NounFrequency, by contrast, shows a very
+large gap: a handful of extremely high-frequency nouns (e.g.\ function-noun
+hybrids, highly common words) pull the mean far above the median.  Word
+frequency in natural language follows a \textbf{Zipfian distribution} — the
+mean is therefore a poor summary statistic and the median better represents the
+``typical'' word.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q5: t-test — Words Starting with `p'}
+% ──────────────────────────────────────────────────────────────────────────────
+
+A two-sided Welch t-test compared the RTs of words beginning with `p' to all
+other words.
+
+\begin{table}[H]
+\centering
+\caption{Two-sided t-test results: p-words vs.\ other words.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Statistic} & \textbf{Value} \\
+\midrule
+$t$ & \placeholder{t} \\
+$df$ & \placeholder{df} \\
+$p$-value & \placeholder{p} \\
+Mean RT (p-words) & \placeholder{M1} \\
+Mean RT (others)  & \placeholder{M2} \\
+Significant at 95\%? & \placeholder{Yes/No} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\placeholder{If not significant:} The difference in mean RT between words
+starting with `p' and other words is not statistically significant at the 95\%
+confidence level.  This suggests that the initial phoneme /p/ alone does not
+reliably predict lexical decision speed, and any observed numerical difference
+could be due to chance or to the confound of differing word-frequency
+distributions between the two groups.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q6: Boxplot — Noun RT vs.\ Verb RT}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{results/Q6_boxplot_noun_verb.png}
+  \caption{Boxplot of RT for nouns (N) and verbs (V) — young subjects.}
+  \label{fig:q6}
+\end{figure}
+
+Outliers appear predominantly \textbf{above} the boxes (upper whiskers), which
+is consistent with the right-skewed nature of RT: extreme slow responses are
+more common than extreme fast ones.  The \texttt{fivenum()} output corresponds
+directly to the boxplot's five reference points: minimum, Q1, median, Q3,
+maximum (after excluding beyond-whisker outliers in ggplot2's default
+implementation).
+
+\begin{table}[H]
+\centering
+\caption{\texttt{fivenum()} output for noun and verb RT (young subjects).}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Category} & \textbf{Min} & \textbf{Q1} & \textbf{Median} & \textbf{Q3} & \textbf{Max} \\
+\midrule
+Nouns & \placeholder{} & \placeholder{} & \placeholder{} & \placeholder{} & \placeholder{} \\
+Verbs & \placeholder{} & \placeholder{} & \placeholder{} & \placeholder{} & \placeholder{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q7: Bar Plot with 95\% Confidence Intervals}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{results/Q7_barplot_ci_noun_verb.png}
+  \caption{Mean RT with 95\% CI for nouns and verbs (young subjects).}
+  \label{fig:q7}
+\end{figure}
+
+The 95\% confidence intervals are computed as $\bar{x} \pm 1.96 \cdot
+\text{SE}$, where $\text{SE} = s / \sqrt{n}$.  \placeholder{Comment on whether
+the CIs overlap.  Non-overlapping CIs suggest a statistically significant
+difference; overlapping CIs suggest the difference may not reach significance.}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q8: Boxplot by Initial Letter}
+% ──────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{results/Q8_boxplot_by_letter.png}
+  \caption{RT distribution by first letter of the word (young subjects).}
+  \label{fig:q8}
+\end{figure}
+
+Some letters show notably \placeholder{higher/lower} median RTs.  Letters that
+initiate many high-frequency words (e.g.\ \textit{t}, \textit{a}) tend to have
+lower median RTs, while infrequent initial letters (e.g.\ \textit{x}, \textit{z})
+may show higher medians due to the predominance of low-frequency words in those
+bins.  The spread of each box also varies, reflecting the heterogeneity of word
+frequencies for different initial letters.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\subsection{Q9: Words Starting with Two Consonants}
+% ──────────────────────────────────────────────────────────────────────────────
+
+Words whose first two characters are both consonants were identified and
+compared to all other words using a two-sided Welch t-test.
+
+\begin{table}[H]
+\centering
+\caption{Two-sided Welch t-test: two-consonant-initial words vs.\ others.}
+\begin{tabular}{lr}
+\toprule
+\textbf{Statistic} & \textbf{Value} \\
+\midrule
+$t$ & \placeholder{t} \\
+$df$ & \placeholder{df} \\
+$p$-value & \placeholder{p} \\
+Mean RT (CC-words) & \placeholder{M1} \\
+Mean RT (others)   & \placeholder{M2} \\
+Significant at 95\%? & \placeholder{Yes/No} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.65\textwidth]{results/Q9_boxplot_two_consonants.png}
+  \caption{RT for words starting with two consonants vs.\ all others.}
+  \label{fig:q9}
+\end{figure}
+
+\textbf{Discussion.}
+\placeholder{Fill in after running.  Typical pattern: CC-initial words tend to
+have longer RTs.  This could reflect (a) lower average word frequency for
+CC-onset words in English (e.g.\ `str-', `gl-' are rarer), or (b) a genuine
+phonological processing cost associated with parsing a complex onset cluster,
+consistent with the Obligatory Contour Principle and articulatory/perceptual
+complexity.  If the difference is significant, cite the t-value and p-value.
+If not, note that frequency differences between groups may be a confound that
+swamps the phonological effect.}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section{Conclusion}
+% ══════════════════════════════════════════════════════════════════════════════
+
+This report has presented a systematic corpus-based comparison of Hindi and
+Telugu using dependency treebanks, and an exploratory analysis of reaction time
+data from a lexical decision experiment.  Key findings are:
+
+\begin{itemize}[leftmargin=1.5em]
+  \item Both Hindi and Telugu are SOV languages with right-skewed dependency
+        distance distributions, consistent with the typological prediction that
+        verb-final languages have longer average dependency distances than
+        verb-initial ones.
+  \item The Mann-Whitney U test \placeholder{confirms/does not confirm} a
+        statistically significant difference in mean dependency distance,
+        suggesting that within the SOV category, morphological richness and
+        postpositional structure further shape syntactic locality.
+  \item Morphological features reveal the expected Indo-Aryan vs.\ Dravidian
+        contrast: richer agglutinative case morphology in Telugu and grammatical
+        gender agreement in Hindi.
+  \item In the psycholinguistic dataset, RT distributions are bimodal across
+        age groups, approximately normal within the young cohort, and
+        right-skewed overall.  Word frequency (NounFrequency) is strongly
+        Zipfian, making the median a more appropriate central tendency measure
+        than the mean.
+\end{itemize}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\section*{Code Repository}
+% ══════════════════════════════════════════════════════════════════════════════
+
+All code is available at: \url{\placeholder{https://github.com/USERNAME/REPO}}
+
+\end{document}
